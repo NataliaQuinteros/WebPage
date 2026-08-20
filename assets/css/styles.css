@@ -677,3 +677,13 @@ textarea:focus-visible {
     justify-content: flex-start;
   }
 }
+
+/* A linked project card: the base a rule sets no colour, so the caption
+   would otherwise render in the browser default link blue. */
+a.work__img {
+  display: block;
+  color: inherit;
+}
+a.work__img:hover .work__title {
+  color: var(--first-color);
+}
