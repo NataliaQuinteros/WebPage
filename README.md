@@ -1,6 +1,6 @@
 # Portfolio
 
-Personal portfolio site — plain HTML, CSS and JavaScript. No build step, no
+Personal portfolio site built with plain HTML, CSS and JavaScript. No build step, no
 dependencies, no framework to update. Deployed with GitHub Pages.
 
 **Live:** https://NataliaQuinteros.github.io/portfolio/
@@ -29,8 +29,8 @@ file to keep in sync.
 - **Add a job:** copy a whole `<li class="job">` block inside `<ol class="timeline">`.
 - **Skills:** the `<ul class="chips">` lists in the About section.
 
-Colours, fonts and spacing are CSS variables at the top of `css/styles.css` —
-change `--accent` to restyle the whole site in one edit. Dark mode follows the
+Colours, fonts and spacing are CSS variables at the top of `css/styles.css`.
+Change `--accent` to restyle the whole site in one edit. Dark mode follows the
 visitor's system setting, and the header toggle overrides it.
 
 ## Publishing the CV
