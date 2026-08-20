@@ -189,19 +189,24 @@
                 <h2 class="section-title">Work</h2>
 
                 <div class="work__container bd-grid">
-                    <!-- To link a project, swap the wrapping div for
-                         <a href="..." class="work__img"> and keep the contents. -->
-                    <a href="https://github.com/NataliaQuinteros/Hound-Windows-Build" target="_blank" rel="noopener" class="work__img">
-                        <img src="assets/img/work1.png" alt="Hound">
+                    <!-- Clicking the image opens it in the lightbox. Add a
+                         work__link before the tags to point at a repo. -->
+                    <div class="work__img">
+                        <button type="button" class="work__zoom" aria-label="Open a larger image of Hound">
+                            <img src="assets/img/work1.png" alt="Hound">
+                        </button>
                         <div class="work__caption">
                             <h3 class="work__title">Hound</h3>
                             <p class="work__text">Thesis project for Hackerlab. Detects hidden spy devices by sniffing packets from nearby devices in monitor mode, then surfaces what it finds through a web interface.</p>
+                            <a class="work__link" href="https://github.com/NataliaQuinteros/Hound-Windows-Build" target="_blank" rel="noopener"><i class='bx bxl-github'></i> View on GitHub</a>
                             <span class="work__tags">FastAPI &middot; ReactJS &middot; SQLite &middot; Kali</span>
                         </div>
-                    </a>
+                    </div>
 
                     <div class="work__img">
-                        <img src="assets/img/work2.svg" alt="Semantic search and production scheduling">
+                        <button type="button" class="work__zoom" aria-label="Open a larger image of Semantic search and scheduling">
+                            <img src="assets/img/work2.svg" alt="Semantic search and production scheduling">
+                        </button>
                         <div class="work__caption">
                             <h3 class="work__title">Semantic search &amp; scheduling</h3>
                             <p class="work__text">An embeddings pipeline on Atlas Vector Search behind a React API, paired with OpenAI language models, plus production schedulers built on Google's CP-SAT constraint solver.</p>
@@ -247,6 +252,12 @@
             </div>
             <p class="footer__copy">&#169; <span id="year">2026</span> Natalia Quinteros-Retamal. Template by <a href="https://github.com/bedimcode/portfolio-responsive-complete" target="_blank" rel="noopener">Bedimcode</a>.</p>
         </footer>
+
+        <!--===== LIGHTBOX =====-->
+        <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Project image">
+            <button type="button" class="lightbox__close" id="lightbox-close" aria-label="Close image"><i class='bx bx-x'></i></button>
+            <img class="lightbox__img" id="lightbox-img" src="" alt="">
+        </div>
 
         <!--===== SCROLL REVEAL =====-->
         <script src="https://unpkg.com/scrollreveal"></script>

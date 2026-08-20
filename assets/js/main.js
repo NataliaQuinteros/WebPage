@@ -84,3 +84,47 @@ if(contactForm && contactForm.action.includes('YOUR_FORM_ID')){
         window.location.href = 'mailto:nataliaquinterosr@gmail.com?subject=' + subject + '&body=' + body
     })
 }
+
+/*===== LIGHTBOX =====*/
+const lightbox = document.getElementById('lightbox'),
+      lightboxImg = document.getElementById('lightbox-img'),
+      lightboxClose = document.getElementById('lightbox-close')
+
+let lastTrigger = null
+
+function openLightbox(trigger){
+    const img = trigger.querySelector('img')
+    if(!img) return
+
+    lastTrigger = trigger
+    lightboxImg.src = img.currentSrc || img.src
+    lightboxImg.alt = img.alt
+    lightbox.classList.add('is-open')
+    document.body.classList.add('has-lightbox')
+    lightboxClose.focus()
+}
+
+function closeLightbox(){
+    lightbox.classList.remove('is-open')
+    document.body.classList.remove('has-lightbox')
+    lightboxImg.src = ''
+    if(lastTrigger) lastTrigger.focus()
+    lastTrigger = null
+}
+
+if(lightbox){
+    document.querySelectorAll('.work__zoom').forEach(btn =>{
+        btn.addEventListener('click', () => openLightbox(btn))
+    })
+
+    lightboxClose.addEventListener('click', closeLightbox)
+
+    // Clicking the backdrop closes; clicking the image itself does not.
+    lightbox.addEventListener('click', (e) =>{
+        if(e.target === lightbox) closeLightbox()
+    })
+
+    document.addEventListener('keydown', (e) =>{
+        if(e.key === 'Escape' && lightbox.classList.contains('is-open')) closeLightbox()
+    })
+}

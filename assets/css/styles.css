@@ -641,16 +641,6 @@ textarea:focus-visible {
   }
 }
 
-/* A linked project card: the base a rule sets no colour, so the caption
-   would otherwise render in the browser default link blue. */
-a.work__img {
-  display: block;
-  color: inherit;
-}
-a.work__img:hover .work__title {
-  color: var(--first-color);
-}
-
 /* ----- skills: two columns of cards ----- */
 .skills__groups {
   display: grid;
@@ -699,4 +689,76 @@ a.work__img:hover .work__title {
   .skills__container {
     grid-template-columns: 100%;
   }
+}
+
+/* ----- work cards: zoomable image and a repo link ----- */
+.work__zoom {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: zoom-in;
+  line-height: 0;
+}
+.work__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 0.6rem;
+  color: var(--first-color);
+  font-size: var(--smaller-font-size);
+  font-weight: var(--font-semi);
+}
+.work__link i {
+  font-size: 1.1rem;
+}
+.work__link:hover {
+  text-decoration: underline;
+}
+.work__caption .work__tags {
+  display: block;
+}
+
+/* ----- lightbox ----- */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: none;
+  place-items: center;
+  padding: 3rem 1rem;
+  background-color: rgba(11, 16, 8, 0.92);
+}
+.lightbox.is-open {
+  display: grid;
+}
+.lightbox__img {
+  max-width: 100%;
+  max-height: 85vh;
+  width: auto;
+  border-radius: 0.5rem;
+  box-shadow: 0px 10px 45px rgba(0, 0, 0, 0.45);
+}
+.lightbox__close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  font-size: 1.75rem;
+  cursor: pointer;
+}
+.lightbox__close:hover {
+  background-color: rgba(255, 255, 255, 0.22);
+}
+body.has-lightbox {
+  overflow: hidden;
 }
