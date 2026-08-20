@@ -270,10 +270,6 @@ img {
 .skills__text {
   margin-bottom: var(--mb-4);
 }
-.skills__img {
-  border-radius: 0.5rem;
-}
-
 /* ===== WORK =====*/
 .work__container {
   row-gap: 2rem;
@@ -686,4 +682,35 @@ a.work__img {
 }
 a.work__img:hover .work__title {
   color: var(--first-color);
+}
+
+/* ----- skills laid out as a grid, no image column ----- */
+.skills__groups {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem 2rem;
+}
+.skills__group {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 576px) {
+  .skills__groups {
+    grid-template-columns: repeat(2, 1fr);
+    text-align: left;
+  }
+  .chips {
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* Nothing sits beside the chips now, so give them the full width and let
+     the seven groups fall into two rows of four. */
+  .skills__container {
+    grid-template-columns: 100%;
+  }
+  .skills__groups {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
