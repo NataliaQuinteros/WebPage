@@ -12,3 +12,6 @@ npm-debug.log*
 
 # Source CV - contains a home address and phone number, keep it out of the repo
 /main.pdf
+
+# Source photo for the cutout, not needed by the site
+*.heic

@@ -27,11 +27,11 @@ assets/favicon.svg    browser tab icon
 
 ## Placeholder images to replace
 
-Everything in `assets/img/` is generated placeholder art, not real imagery.
+`profile.svg` is your real cutout photo. The rest of `assets/img/` is still
+generated placeholder art.
 
 | File | Shows | Replace with |
 | --- | --- | --- |
-| `profile.svg` | silhouette in the home blob | a photo of you, roughly square |
 | `about.svg` | abstract shapes | a photo for the About section |
 | `work1.svg` to `work4.svg` | project name cards | screenshots of each project |
 
@@ -60,6 +60,17 @@ The form posts to Formspree, which needs a free account. Create a form at
 [formspree.io](https://formspree.io) and paste your endpoint into the `action`
 attribute in the Contact section, replacing `YOUR_FORM_ID`. Until then the form
 will not deliver anything, but the email link beside it works.
+
+## The cutout photo
+
+`assets/img/profile.svg` is you, cut out of `20251008_135650.heic` with the
+background and the backpack removed. It embeds a WebP, which keeps it at about
+80KB instead of the 1MB a PNG would cost, and every current browser renders it.
+Some desktop vector editors do not read WebP, so `assets/img/natalia-cutout.png`
+holds the same cutout as a plain transparent PNG for anything outside a browser.
+
+The source `.heic` is gitignored. It is a full resolution personal photo the
+site does not need.
 
 ## Publishing the CV
 
