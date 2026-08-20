@@ -5,12 +5,12 @@
   --header-height: 3rem;
   --font-semi: 600;
   /*===== Colores =====*/
-  /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
+  /*Moss 85 - Teal 175 - Blue 224 - Purple 260*/
   /* HSL color mode */
-  --hue-color: 175;
-  --first-color: hsl(var(--hue-color), 84%, 27%);
-  --first-color-tint: hsl(var(--hue-color), 40%, 95%);
-  --second-color: hsl(var(--hue-color), 45%, 11%);
+  --hue-color: 85;
+  --first-color: hsl(var(--hue-color), 38%, 28%);
+  --first-color-tint: hsl(var(--hue-color), 34%, 93%);
+  --second-color: hsl(var(--hue-color), 30%, 10%);
   /*===== Fuente y tipografia =====*/
   --body-font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   --accent-font: "Roboto", "Segoe UI", Helvetica, Arial, sans-serif;
@@ -182,27 +182,34 @@ img {
 
 /*===== HOME =====*/
 .home {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   position: relative;
-  row-gap: 5rem;
+  gap: 1.5rem;
   padding: 4rem 0 5rem;
 }
 .home__data {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--mb-5);
+  text-align: left;
   align-self: center;
 }
 .home__title {
   font-size: var(--big-font-size);
-  margin-bottom: var(--mb-5);
 }
 .home__title-color {
   color: var(--first-color);
 }
 .home__social {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5rem;
 }
 .home__social-icon {
   width: max-content;
-  margin-bottom: var(--mb-2);
   font-size: 1.5rem;
   color: var(--second-color);
 }
@@ -377,9 +384,9 @@ img {
   }
   .home__social {
     padding-top: 0;
-    padding-bottom: 2.5rem;
+    padding-bottom: 0;
     flex-direction: row;
-    align-self: flex-end;
+    align-self: flex-start;
   }
   .home__social-icon {
     margin-bottom: 0;
@@ -674,5 +681,13 @@ textarea:focus-visible {
   }
   .contact__form {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .home {
+    grid-template-columns: 100%;
+    row-gap: 5rem;
+    padding-bottom: 6rem;
   }
 }
