@@ -226,7 +226,7 @@ img {
   fill: var(--first-color);
 }
 .home__blob-img {
-  width: 360px;
+  width: 400px;
 }
 
 /*BUTTONS*/
@@ -269,41 +269,6 @@ img {
 }
 .skills__text {
   margin-bottom: var(--mb-4);
-}
-.skills__data {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  font-weight: var(--font-semi);
-  padding: 0.5rem 1rem;
-  margin-bottom: var(--mb-4);
-  border-radius: 0.5rem;
-  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
-}
-.skills__icon {
-  font-size: 2rem;
-  margin-right: var(--mb-2);
-  color: var(--first-color);
-}
-.skills__names {
-  display: flex;
-  align-items: center;
-}
-.skills__bar {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  background-color: var(--first-color);
-  height: 0.25rem;
-  border-radius: 0.5rem;
-  z-index: var(--z-back);
-}
-.skills__advanced {
-  width: 90%;
-}
-.skills__intermediate {
-  width: 65%;
 }
 .skills__img {
   border-radius: 0.5rem;
@@ -494,7 +459,6 @@ img {
 /* ===== ADDITIONS =====*/
 /* Everything below is mine, not the original template. */
 
-.skills__percentage,
 .experience__date,
 .about__facts-year {
   font-family: var(--accent-font);
@@ -537,17 +501,6 @@ img {
 }
 
 /* ----- skills ----- */
-.skills__percentage {
-  font-size: var(--smaller-font-size);
-  font-weight: 500;
-}
-.skills__more {
-  margin-top: var(--mb-4);
-  font-size: var(--smaller-font-size);
-  line-height: 1.7;
-  opacity: 0.75;
-}
-
 /* ----- experience ----- */
 .experience__container {
   row-gap: 1.5rem;
@@ -689,5 +642,38 @@ textarea:focus-visible {
     grid-template-columns: 100%;
     row-gap: 5rem;
     padding-bottom: 6rem;
+  }
+}
+
+/* ----- skills chips ----- */
+.skills__group {
+  margin-bottom: var(--mb-2);
+}
+.skills__group-title {
+  font-family: var(--accent-font);
+  font-size: var(--smaller-font-size);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.11em;
+  color: var(--first-color);
+  margin: 0 0 0.55rem;
+}
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.4rem;
+}
+.chips li {
+  padding: 0.3rem 0.75rem;
+  border-radius: 999px;
+  background-color: var(--first-color-tint);
+  font-size: var(--smaller-font-size);
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 768px) {
+  .chips {
+    justify-content: flex-start;
   }
 }
