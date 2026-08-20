@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" width="640" height="480">
+  <rect width="640" height="480" fill="#0d211f"/>
+  <circle cx="560" cy="70" r="170" fill="#0a766c" opacity="0.45"/>
+  <circle cx="70" cy="440" r="120" fill="#0a766c" opacity="0.3"/>
+  <text x="52" y="150" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="96" font-weight="700"
+        fill="#ffffff" opacity="0.22">01</text>
+  <text x="52" y="270" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="46" font-weight="700"
+        fill="#ffffff">Hound</text>
+  <text x="52" y="315" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="19"
+        fill="#e6f4f2" opacity="0.85">FastAPI · ReactJS · SQLite · Kali</text>
+  <text x="52" y="430" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15"
+        fill="#e6f4f2" opacity="0.55">screenshot goes here</text>
+</svg>

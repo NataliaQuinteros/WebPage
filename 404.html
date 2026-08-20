@@ -1,25 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Page not found</title>
-<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css">
-<style>
-  .notfound { min-height: 70vh; display: grid; place-content: center; text-align: center; gap: 1rem; }
-  .notfound h1 { font-size: clamp(3rem, 12vw, 6rem); letter-spacing: -0.05em; }
-  .notfound p { color: var(--ink-soft); margin: 0; }
-</style>
-</head>
-<body>
-  <main class="wrap notfound">
-    <h1>404</h1>
-    <p>That page does not exist.</p>
-    <p><a class="btn" href="./">Back to the portfolio</a></p>
-  </main>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Page not found &middot; Natalia Quinteros-Retamal</title>
+
+        <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <style>
+            .notfound {
+                min-height: 80vh;
+                display: grid;
+                place-content: center;
+                text-align: center;
+                gap: 1rem;
+                padding: 2rem 1rem;
+            }
+            .notfound__code {
+                font-family: var(--accent-font);
+                font-size: 5rem;
+                font-weight: 700;
+                color: var(--first-color);
+                line-height: 1;
+                margin: 0;
+            }
+            .notfound__text {
+                margin: 0 0 1rem;
+            }
+        </style>
+    </head>
+    <body>
+        <main class="notfound">
+            <p class="notfound__code">404</p>
+            <p class="notfound__text">That page does not exist.</p>
+            <p><a href="./" class="button">Back to the portfolio</a></p>
+        </main>
+    </body>
 </html>

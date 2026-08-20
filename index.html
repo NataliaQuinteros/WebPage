@@ -1,382 +1,329 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Natalia Quinteros-Retamal &middot; Full-Stack Developer</title>
-<meta name="description" content="Full-stack developer and computer engineer. REST APIs in Express and FastAPI, interfaces in React and Vue, plus cybersecurity research and CTFs.">
-<meta name="author" content="Natalia Quinteros-Retamal">
+        <title>Natalia Quinteros-Retamal &middot; Full-Stack Developer</title>
+        <meta name="description" content="Full-stack developer and computer engineer. REST APIs in Express and FastAPI, interfaces in React and Vue, plus cybersecurity research and CTFs.">
+        <meta name="author" content="Natalia Quinteros-Retamal">
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Natalia Quinteros-Retamal &middot; Full-Stack Developer">
-<meta property="og:description" content="Full-stack developer and computer engineer, with a second life in cybersecurity.">
-<meta property="og:url" content="https://NataliaQuinteros.github.io/portfolio/">
-<!-- <meta property="og:image" content="https://NataliaQuinteros.github.io/portfolio/assets/og-image.png"> -->
-<meta name="twitter:card" content="summary_large_image">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Natalia Quinteros-Retamal &middot; Full-Stack Developer">
+        <meta property="og:description" content="Full-stack developer and computer engineer, with a second life in cybersecurity.">
+        <meta property="og:url" content="https://NataliaQuinteros.github.io/portfolio/">
 
-<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css">
+        <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+        <link rel="stylesheet" href="assets/css/styles.css">
 
-<script>
-  /* Apply the saved theme before first paint so the page never flashes. */
-  try {
-    var saved = localStorage.getItem('theme');
-    if (saved) document.documentElement.setAttribute('data-theme', saved);
-  } catch (e) {}
-</script>
-</head>
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
-<body id="top">
-<a class="skip-link" href="#main">Skip to content</a>
+        <!-- Template: Portfolio Responsive Complete by Bedimcode
+             https://github.com/bedimcode/portfolio-responsive-complete -->
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#home" class="nav__logo">Natalia</a>
+                </div>
 
-<header class="site-header">
-  <div class="wrap header__inner">
-    <a class="brand" href="#top">
-      <span class="brand__mark">NQ</span>
-      <span class="brand__name">Natalia Quinteros-Retamal</span>
-    </a>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
 
-    <nav class="nav" aria-label="Main">
-      <a href="#work">Work</a>
-      <a href="#experience">Experience</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
 
-    <button class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
-      <svg class="icon icon--sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
-        <circle cx="12" cy="12" r="4.2"/>
-        <g stroke-linecap="round">
-          <path d="M12 2.6v2.3M12 19.1v2.3M4.3 4.3l1.6 1.6M18.1 18.1l1.6 1.6M2.6 12h2.3M19.1 12h2.3M4.3 19.7l1.6-1.6M18.1 5.9l1.6-1.6"/>
-        </g>
-      </svg>
-      <svg class="icon icon--moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
-        <path d="M20.5 14.6A8.6 8.6 0 0 1 9.4 3.5a8.6 8.6 0 1 0 11.1 11.1z"/>
-      </svg>
-    </button>
-  </div>
-</header>
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">Natalia</span><br> Full-Stack Developer</h1>
 
-<main id="main">
+                    <p class="home__subtitle">Lausanne, Switzerland &middot; Open to new roles</p>
 
-  <!-- ===== HERO ===== -->
-  <section class="hero">
-    <div class="wrap">
-      <p class="hero__eyebrow reveal">Lausanne, Switzerland &middot; Open to new roles</p>
-      <h1 class="hero__title reveal">Natalia<br>Quinteros-Retamal</h1>
-      <p class="hero__role reveal">Full-Stack Developer &amp; Computer Engineer</p>
-      <p class="hero__pitch reveal">
-        I build web applications end to end, from REST APIs in Express and
-        FastAPI to interfaces in React and Vue, plus the integrations in
-        between. The other half of my work is cybersecurity: research at
-        CLCERT, a thesis on detecting hidden spy devices, and a habit of
-        placing well in CTFs.
-      </p>
+                    <a href="#contact" class="button">Contact</a>
+                </div>
 
-      <div class="hero__actions reveal">
-        <a class="btn btn--primary" href="#work">View my work</a>
-        <a class="btn" href="mailto:nataliaquinterosr@gmail.com">Get in touch</a>
-      </div>
+                <div class="home__social">
+                    <a href="https://linkedin.com/in/natalia-quinteros-retamal" target="_blank" rel="noopener" class="home__social-icon" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/NataliaQuinteros" target="_blank" rel="noopener" class="home__social-icon" aria-label="GitHub"><i class='bx bxl-github' ></i></a>
+                    <a href="mailto:nataliaquinterosr@gmail.com" class="home__social-icon" aria-label="Email"><i class='bx bx-envelope' ></i></a>
+                </div>
 
-      <ul class="hero__links reveal">
-        <li><a href="https://github.com/NataliaQuinteros" target="_blank" rel="noopener">GitHub</a></li>
-        <li><a href="https://linkedin.com/in/natalia-quinteros-retamal" target="_blank" rel="noopener">LinkedIn</a></li>
-        <!-- To publish your CV: put the PDF at assets/resume.pdf and uncomment.
-             Strip your home address and phone number from it first.
-        <li><a href="assets/resume.pdf" target="_blank" rel="noopener">R&eacute;sum&eacute;</a></li>
-        -->
-      </ul>
-    </div>
-  </section>
+                <div class="home__img">
+                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                            <image class="home__blob-img" x="50" y="60" href="assets/img/profile.svg"/>
+                        </g>
+                    </svg>
+                </div>
+            </section>
 
-  <!-- ===== WORK ===== -->
-  <section class="section" id="work">
-    <div class="wrap">
-      <h2 class="section__title reveal">Selected work</h2>
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
 
-      <div class="projects">
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/about.svg" alt="Placeholder illustration, to be replaced with a photo">
+                    </div>
 
-        <article class="project reveal">
-          <span class="project__num" aria-hidden="true">01</span>
-          <div class="project__body">
-            <h3 class="project__title"><span class="project__link">Hound</span></h3>
-            <p class="project__desc">
-              Thesis project: an application that detects hidden spy devices by
-              sniffing packets from nearby devices in monitor mode, then
-              surfacing what it finds through a web interface. Built end to end,
-              from capture to UI.
-            </p>
-            <ul class="project__tags">
-              <li>FastAPI</li><li>ReactJS</li><li>SQLite</li><li>Kali Linux</li>
-            </ul>
-            <div class="project__meta">
-              <span class="project__where">Hackerlab &middot; 2023&ndash;2024</span>
+                    <div>
+                        <h2 class="about__subtitle">I'm Natalia</h2>
+                        <p class="about__text">I'm a computer engineer from Universidad de Chile, graduated with highest honors, and I've spent the last few years building full-stack web applications end to end: APIs in Express and FastAPI, interfaces in React and Vue, and the integrations that hold the two together. Most recently at Crazycake Technologies, where I worked with clients directly from project planning through delivery.</p>
+                        <p class="about__text">The other half of my work is security. I research at CLCERT, the University of Chile's applied cryptography and cybersecurity laboratory, and wrote my thesis on detecting hidden spy devices through packet sniffing. I've taught seven semesters as a teaching assistant, including a competitive hacking workshop, and built course material for SheHacks, a Ni&ntilde;as Pro initiative that gets secondary-school girls into programming and cybersecurity.</p>
+
+                        <ul class="about__facts">
+                            <li><span class="about__facts-year">2024</span> Computer Engineering, Universidad de Chile &middot; highest honors</li>
+                            <li><span class="about__facts-year">2022</span> BSc Computer Science, Universidad de Chile &middot; with honors</li>
+                            <li><span class="about__facts-year">2022</span> 1st place at NIVEL4 CTF</li>
+                            <li><span class="about__facts-year">2023</span> 5th at CTF PDI, 7th at Hack.ing</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skills__container bd-grid">
+                    <div>
+                        <h2 class="skills__subtitle">Professional Skills</h2>
+                        <p class="skills__text">Levels below follow my CV: advanced for the tools I reach for daily, intermediate for the ones I'm comfortable in but use less often.</p>
+
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-python skills__icon'></i>
+                                <span class="skills__name">PYTHON</span>
+                            </div>
+                            <div class="skills__bar skills__advanced"></div>
+                            <div>
+                                <span class="skills__percentage">Advanced</span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-javascript skills__icon'></i>
+                                <span class="skills__name">JAVASCRIPT</span>
+                            </div>
+                            <div class="skills__bar skills__advanced"></div>
+                            <div>
+                                <span class="skills__percentage">Advanced</span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bx-data skills__icon'></i>
+                                <span class="skills__name">SQL &amp; MONGODB</span>
+                            </div>
+                            <div class="skills__bar skills__advanced"></div>
+                            <div>
+                                <span class="skills__percentage">Advanced</span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-react skills__icon'></i>
+                                <span class="skills__name">REACT &amp; VUE</span>
+                            </div>
+                            <div class="skills__bar skills__advanced"></div>
+                            <div>
+                                <span class="skills__percentage">Advanced</span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-nodejs skills__icon'></i>
+                                <span class="skills__name">NODE &amp; FASTAPI</span>
+                            </div>
+                            <div class="skills__bar skills__advanced"></div>
+                            <div>
+                                <span class="skills__percentage">Advanced</span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bx-shield-quarter skills__icon'></i>
+                                <span class="skills__name">SECURITY TOOLING</span>
+                            </div>
+                            <div class="skills__bar skills__advanced"></div>
+                            <div>
+                                <span class="skills__percentage">Advanced</span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-docker skills__icon'></i>
+                                <span class="skills__name">DOCKER &amp; CLOUD</span>
+                            </div>
+                            <div class="skills__bar skills__intermediate"></div>
+                            <div>
+                                <span class="skills__percentage">Intermediate</span>
+                            </div>
+                        </div>
+
+                        <p class="skills__more">Also: Java, C, R, Ruby, Racket, GraphQL, Django, Ruby on Rails, Pandas, NumPy, AWS, Azure, Git, CI/CD, Agile, TDD, SOLID, Figma. Spanish (native), English (C1), French (B2).</p>
+                    </div>
+
+                    <div>
+                        <img src="assets/img/work2.svg" alt="" class="skills__img">
+                    </div>
+                </div>
+            </section>
+
+            <!--===== EXPERIENCE =====-->
+            <section class="experience section" id="experience">
+                <h2 class="section-title">Experience</h2>
+
+                <div class="experience__container bd-grid">
+                    <div class="experience__item">
+                        <span class="experience__date">Sep 2024 &ndash; Jun 2026</span>
+                        <h3 class="experience__role">Full-Stack Developer</h3>
+                        <span class="experience__org">Crazycake Technologies</span>
+                        <p class="experience__text">Built RESTful APIs with Express.js and Node.js and integrated them with third-party services including Webpay Transbank and PedidosYa, then wired them into responsive Vue.js interfaces. Developed embeddings with Atlas Vector Search for a React API coupled with OpenAI language models, and production schedulers using Google's CP-SAT solver. Managed client interactions through planning and development.</p>
+                    </div>
+
+                    <div class="experience__item">
+                        <span class="experience__date">Apr 2023 &ndash; Present</span>
+                        <h3 class="experience__role">Cybersecurity Researcher</h3>
+                        <span class="experience__org">CLCERT &middot; Universidad de Chile</span>
+                        <p class="experience__text">Member of the Applied Cryptography and Cybersecurity laboratory, doing voluntary outreach on good practices and online risk, and developing services focused on cybersecurity.</p>
+                    </div>
+
+                    <div class="experience__item">
+                        <span class="experience__date">2021 &ndash; 2024</span>
+                        <h3 class="experience__role">Teaching Assistant</h3>
+                        <span class="experience__org">Universidad de Chile</span>
+                        <p class="experience__text">Competitive Hacking Workshop (two semesters), Databases, Design and Analysis of Algorithms, and Computational Tools for Engineering and Sciences (three semesters).</p>
+                    </div>
+
+                    <div class="experience__item">
+                        <span class="experience__date">Jan &ndash; Mar 2023</span>
+                        <h3 class="experience__role">Full-Stack Developer, Internship</h3>
+                        <span class="experience__org">LVA &Iacute;ndices</span>
+                        <p class="experience__text">Built bond spread and yield curve modules for the Infobonos platform using ReactJS and FastAPI, and modified a GraphQL API to connect them to AWS endpoints.</p>
+                    </div>
+
+                    <div class="experience__item">
+                        <span class="experience__date">Jan &ndash; Mar 2022</span>
+                        <h3 class="experience__role">Front-End Developer, Internship</h3>
+                        <span class="experience__org">Neykos SPA</span>
+                        <p class="experience__text">Developed tests and a Ruby on Rails module for the PMSystem web application, displaying measured KPIs for goods-producing companies.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== WORK =====-->
+            <section class="work section" id="work">
+                <h2 class="section-title">Work</h2>
+
+                <div class="work__container bd-grid">
+                    <!-- To link a project, swap the wrapping div for
+                         <a href="..." class="work__img"> and keep the contents. -->
+                    <div class="work__img">
+                        <img src="assets/img/work1.svg" alt="Hound">
+                        <div class="work__caption">
+                            <h3 class="work__title">Hound</h3>
+                            <p class="work__text">Thesis project for Hackerlab. Detects hidden spy devices by sniffing packets from nearby devices in monitor mode, then surfaces what it finds through a web interface.</p>
+                            <span class="work__tags">FastAPI &middot; ReactJS &middot; SQLite &middot; Kali</span>
+                        </div>
+                    </div>
+
+                    <div class="work__img">
+                        <img src="assets/img/work2.svg" alt="Semantic search and production scheduling">
+                        <div class="work__caption">
+                            <h3 class="work__title">Semantic search &amp; scheduling</h3>
+                            <p class="work__text">An embeddings pipeline on Atlas Vector Search behind a React API, paired with OpenAI language models, plus production schedulers built on Google's CP-SAT constraint solver.</p>
+                            <span class="work__tags">React &middot; MongoDB Atlas &middot; OpenAI &middot; CP-SAT</span>
+                        </div>
+                    </div>
+
+                    <div class="work__img">
+                        <img src="assets/img/work3.svg" alt="Payments and delivery integrations">
+                        <div class="work__caption">
+                            <h3 class="work__title">Payments &amp; delivery APIs</h3>
+                            <p class="work__text">RESTful APIs in Express and Node.js wired up to Webpay Transbank and PedidosYa, then surfaced through responsive, user-focused Vue.js front-ends.</p>
+                            <span class="work__tags">Express.js &middot; Node.js &middot; Vue.js &middot; REST</span>
+                        </div>
+                    </div>
+
+                    <div class="work__img">
+                        <img src="assets/img/work4.svg" alt="Infobonos bond spreads and yield curves">
+                        <div class="work__caption">
+                            <h3 class="work__title">Infobonos</h3>
+                            <p class="work__text">Two modules for a financial data platform: one showing the spread across a range of bonds at a given moment, one showing the state of yield curves, connected to AWS through GraphQL.</p>
+                            <span class="work__tags">ReactJS &middot; FastAPI &middot; GraphQL &middot; AWS</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+
+                <div class="contact__container bd-grid">
+                    <!-- This form needs a backend to actually send mail. Create a free
+                         form at https://formspree.io, then paste your endpoint into
+                         the action below. Until then the email link underneath works. -->
+                    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact__form">
+                        <input type="text" name="name" placeholder="Name" class="contact__input" required>
+                        <input type="email" name="email" placeholder="Email" class="contact__input" required>
+                        <textarea name="message" cols="0" rows="10" placeholder="Message" class="contact__input" required></textarea>
+                        <input type="submit" value="Send" class="contact__button button">
+                    </form>
+
+                    <div class="contact__info">
+                        <h3 class="contact__subtitle">Or reach me directly</h3>
+                        <p class="contact__text">I'm open to full-stack and security roles in Switzerland and remotely.</p>
+                        <a href="mailto:nataliaquinterosr@gmail.com" class="contact__link"><i class='bx bx-envelope'></i> nataliaquinterosr@gmail.com</a>
+                        <a href="https://github.com/NataliaQuinteros" target="_blank" rel="noopener" class="contact__link"><i class='bx bxl-github'></i> github.com/NataliaQuinteros</a>
+                        <a href="https://linkedin.com/in/natalia-quinteros-retamal" target="_blank" rel="noopener" class="contact__link"><i class='bx bxl-linkedin'></i> natalia-quinteros-retamal</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Natalia Quinteros-Retamal</p>
+            <div class="footer__social">
+                <a href="https://github.com/NataliaQuinteros" target="_blank" rel="noopener" class="footer__icon" aria-label="GitHub"><i class='bx bxl-github' ></i></a>
+                <a href="https://linkedin.com/in/natalia-quinteros-retamal" target="_blank" rel="noopener" class="footer__icon" aria-label="LinkedIn"><i class='bx bxl-linkedin' ></i></a>
+                <a href="mailto:nataliaquinterosr@gmail.com" class="footer__icon" aria-label="Email"><i class='bx bx-envelope' ></i></a>
             </div>
-          </div>
-        </article>
+            <p class="footer__copy">&#169; <span id="year">2026</span> Natalia Quinteros-Retamal. Template by <a href="https://github.com/bedimcode/portfolio-responsive-complete" target="_blank" rel="noopener">Bedimcode</a>.</p>
+        </footer>
 
-        <article class="project reveal">
-          <span class="project__num" aria-hidden="true">02</span>
-          <div class="project__body">
-            <h3 class="project__title"><span class="project__link">Semantic search &amp; production scheduling</span></h3>
-            <p class="project__desc">
-              An embeddings pipeline on Atlas Vector Search behind a React API,
-              paired with OpenAI language models, plus production schedulers
-              built on Google&rsquo;s CP-SAT constraint solver.
-            </p>
-            <ul class="project__tags">
-              <li>React</li><li>MongoDB Atlas</li><li>OpenAI</li><li>CP-SAT</li>
-            </ul>
-            <div class="project__meta">
-              <span class="project__where">Crazycake Technologies &middot; 2024&ndash;2026</span>
-            </div>
-          </div>
-        </article>
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
 
-        <article class="project reveal">
-          <span class="project__num" aria-hidden="true">03</span>
-          <div class="project__body">
-            <h3 class="project__title"><span class="project__link">Payments &amp; delivery integrations</span></h3>
-            <p class="project__desc">
-              RESTful APIs in Express and Node.js wired up to third-party
-              services including Webpay Transbank and PedidosYa, then surfaced
-              through responsive, user-focused Vue.js front-ends.
-            </p>
-            <ul class="project__tags">
-              <li>Express.js</li><li>Node.js</li><li>Vue.js</li><li>REST</li>
-            </ul>
-            <div class="project__meta">
-              <span class="project__where">Crazycake Technologies &middot; 2024&ndash;2026</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="project reveal">
-          <span class="project__num" aria-hidden="true">04</span>
-          <div class="project__body">
-            <h3 class="project__title"><span class="project__link">Infobonos: bond spreads &amp; yield curves</span></h3>
-            <p class="project__desc">
-              Two modules for a financial data platform: one showing the spread
-              across a range of bonds at a given moment, one showing the state
-              of yield curves. Extended the platform&rsquo;s GraphQL API to
-              connect them to AWS endpoints.
-            </p>
-            <ul class="project__tags">
-              <li>ReactJS</li><li>FastAPI</li><li>GraphQL</li><li>AWS</li>
-            </ul>
-            <div class="project__meta">
-              <span class="project__where">LVA &Iacute;ndices &middot; 2023</span>
-            </div>
-          </div>
-        </article>
-
-      </div>
-
-      <p class="projects__more reveal">
-        More on <a href="https://github.com/NataliaQuinteros" target="_blank" rel="noopener">GitHub &rarr;</a>
-      </p>
-    </div>
-  </section>
-
-  <!-- ===== EXPERIENCE ===== -->
-  <section class="section section--alt" id="experience">
-    <div class="wrap">
-      <h2 class="section__title reveal">Experience</h2>
-
-      <ol class="timeline">
-
-        <li class="job reveal">
-          <p class="job__dates">Sep 2024 &ndash; Jun 2026</p>
-          <div class="job__body">
-            <h3 class="job__role">Full-Stack Developer</h3>
-            <p class="job__org">Crazycake Technologies</p>
-            <ul class="job__points">
-              <li>Built RESTful APIs with Express.js and Node.js, and integrated them with third-party services such as Webpay Transbank and PedidosYa.</li>
-              <li>Wired those APIs into Vue.js applications and developed responsive, user-focused front-end interfaces.</li>
-              <li>Developed embeddings with Atlas Vector Search for a React API coupled with OpenAI language models, and production schedulers using Google&rsquo;s CP-SAT solver.</li>
-              <li>Managed client interactions throughout project planning and development.</li>
-            </ul>
-          </div>
-        </li>
-
-        <li class="job reveal">
-          <p class="job__dates">Apr 2023 &ndash; Present</p>
-          <div class="job__body">
-            <h3 class="job__role">Cybersecurity Researcher</h3>
-            <p class="job__org">CLCERT &middot; Universidad de Chile</p>
-            <ul class="job__points">
-              <li>Member of the Applied Cryptography and Cybersecurity laboratory, doing voluntary outreach on good practices and online risk.</li>
-              <li>Development of services focused on cybersecurity.</li>
-            </ul>
-          </div>
-        </li>
-
-        <li class="job reveal">
-          <p class="job__dates">2021 &ndash; 2024</p>
-          <div class="job__body">
-            <h3 class="job__role">Teaching Assistant</h3>
-            <p class="job__org">Universidad de Chile</p>
-            <ul class="job__points">
-              <li>Competitive Hacking Workshop (two semesters).</li>
-              <li>Databases, and Design and Analysis of Algorithms.</li>
-              <li>Computational Tools for Engineering and Sciences (three semesters).</li>
-            </ul>
-          </div>
-        </li>
-
-        <li class="job reveal">
-          <p class="job__dates">Jan &ndash; Mar 2023</p>
-          <div class="job__body">
-            <h3 class="job__role">Full-Stack Developer, Internship</h3>
-            <p class="job__org">LVA &Iacute;ndices</p>
-            <ul class="job__points">
-              <li>Built bond spread and yield curve modules for the Infobonos platform using ReactJS and FastAPI, and modified a GraphQL API to connect them to AWS endpoints.</li>
-            </ul>
-          </div>
-        </li>
-
-        <li class="job reveal">
-          <p class="job__dates">Jan &ndash; Mar 2022</p>
-          <div class="job__body">
-            <h3 class="job__role">Front-End Developer, Internship</h3>
-            <p class="job__org">Neykos SPA</p>
-            <ul class="job__points">
-              <li>Developed tests and a Ruby on Rails module for the PMSystem web application, displaying measured KPIs for goods-producing companies.</li>
-            </ul>
-          </div>
-        </li>
-
-      </ol>
-    </div>
-  </section>
-
-  <!-- ===== ABOUT ===== -->
-  <section class="section" id="about">
-    <div class="wrap about">
-
-      <div class="about__text">
-        <h2 class="section__title reveal">About</h2>
-        <p class="reveal">
-          I&rsquo;m a computer engineer from Universidad de Chile, and I&rsquo;ve
-          spent the last few years building full-stack web applications end to
-          end: APIs in Express and FastAPI, interfaces in React and Vue, and
-          the integrations that hold the two together. Most recently at
-          Crazycake Technologies, where I worked with clients directly from
-          project planning through delivery.
-        </p>
-        <p class="reveal">
-          The other half of my work is security. I research at CLCERT, the
-          University of Chile&rsquo;s applied cryptography and cybersecurity
-          laboratory, and wrote my thesis on detecting hidden spy devices
-          through packet sniffing. I&rsquo;ve taught seven semesters as a
-          teaching assistant, including a competitive hacking workshop, and
-          built course material for SheHacks, a Ni&ntilde;as Pro initiative
-          that gets secondary-school girls into programming and cybersecurity.
-          I&rsquo;m based near Lausanne and looking for my next team.
-        </p>
-
-        <h3 class="block__title reveal">Education</h3>
-        <ul class="facts reveal">
-          <li>
-            <span class="facts__year">2024</span>
-            <span class="facts__body">
-              <strong>Computer Engineering</strong>
-              &middot; Universidad de Chile, Facultad de Ciencias F&iacute;sicas y Matem&aacute;ticas.
-              <em>Graduated with highest honors.</em>
-            </span>
-          </li>
-          <li>
-            <span class="facts__year">2022</span>
-            <span class="facts__body">
-              <strong>BSc Computer Science</strong>
-              &middot; Universidad de Chile, Facultad de Ciencias F&iacute;sicas y Matem&aacute;ticas.
-              <em>Graduated with honors.</em>
-            </span>
-          </li>
-        </ul>
-
-        <h3 class="block__title reveal">Capture the flag</h3>
-        <ul class="facts reveal">
-          <li><span class="facts__year">2022</span><span class="facts__body"><strong>1st place</strong> at NIVEL4</span></li>
-          <li><span class="facts__year">2023</span><span class="facts__body"><strong>5th place</strong> at CTF PDI, Campo de Marte</span></li>
-          <li><span class="facts__year">2023</span><span class="facts__body"><strong>7th place</strong> at Hack.ing</span></li>
-        </ul>
-      </div>
-
-      <div class="about__side">
-        <div class="skills reveal">
-          <h3 class="skills__group">Languages</h3>
-          <ul class="chips">
-            <li>Python</li><li>JavaScript</li><li>Java</li><li>SQL</li><li>HTML5</li>
-            <li>CSS</li><li>Shell</li><li>Matlab</li><li>C</li><li>Ruby</li><li>R</li><li>Racket</li>
-          </ul>
-
-          <h3 class="skills__group">Frameworks &amp; libraries</h3>
-          <ul class="chips">
-            <li>React</li><li>Vue</li><li>Express.js</li><li>Node.js</li><li>FastAPI</li>
-            <li>Django</li><li>Ruby on Rails</li><li>Pandas</li><li>NumPy</li><li>PyOpenGL</li>
-          </ul>
-
-          <h3 class="skills__group">Data</h3>
-          <ul class="chips">
-            <li>MongoDB</li><li>SQLite</li><li>GraphQL</li><li>Atlas Vector Search</li>
-          </ul>
-
-          <h3 class="skills__group">Cloud &amp; tooling</h3>
-          <ul class="chips">
-            <li>AWS (ECS, Lightsail)</li><li>Azure</li><li>Docker</li><li>Git</li>
-            <li>CI/CD</li><li>Bash / Linux</li><li>WSL2</li><li>Figma</li>
-          </ul>
-
-          <h3 class="skills__group">Security</h3>
-          <ul class="chips">
-            <li>Aircrack-ng</li><li>Burp Suite</li><li>Kali</li><li>Packet sniffing</li>
-          </ul>
-
-          <h3 class="skills__group">Practices</h3>
-          <ul class="chips">
-            <li>Agile / Scrum</li><li>TDD</li><li>SOLID</li><li>OOP</li>
-          </ul>
-
-          <h3 class="skills__group">Spoken</h3>
-          <ul class="chips">
-            <li>Spanish (native)</li><li>English (C1)</li><li>French (B2)</li>
-          </ul>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ===== CONTACT ===== -->
-  <section class="section section--alt" id="contact">
-    <div class="wrap contact">
-      <h2 class="section__title reveal">Contact</h2>
-      <p class="contact__lead reveal">
-        I&rsquo;m open to full-stack and security-adjacent roles in Switzerland
-        and remotely. The fastest way to reach me is email.
-      </p>
-      <a class="contact__email reveal" href="mailto:nataliaquinterosr@gmail.com">nataliaquinterosr@gmail.com</a>
-      <ul class="contact__links reveal">
-        <li><a href="https://github.com/NataliaQuinteros" target="_blank" rel="noopener">GitHub</a></li>
-        <li><a href="https://linkedin.com/in/natalia-quinteros-retamal" target="_blank" rel="noopener">LinkedIn</a></li>
-      </ul>
-    </div>
-  </section>
-
-</main>
-
-<footer class="site-footer">
-  <div class="wrap footer__inner">
-    <p>&copy; <span id="year">2026</span> Natalia Quinteros-Retamal</p>
-    <p><a href="#top">Back to top &uarr;</a></p>
-  </div>
-</footer>
-
-<script src="js/main.js"></script>
-</body>
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>

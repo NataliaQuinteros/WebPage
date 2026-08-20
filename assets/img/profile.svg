@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 420" width="360" height="420">
+  <g fill="#ffffff" opacity="0.9">
+    <circle cx="180" cy="150" r="78"/>
+    <path d="M180 250c-79 0-143 54-143 121v49h286v-49c0-67-64-121-143-121z"/>
+  </g>
+  <text x="180" y="408" text-anchor="middle" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15"
+        fill="#ffffff" opacity="0.75">your photo here</text>
+</svg>

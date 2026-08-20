@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" width="600" height="420">
+  <rect width="600" height="420" fill="#0d211f"/>
+  <circle cx="470" cy="90" r="150" fill="#0a766c" opacity="0.55"/>
+  <circle cx="120" cy="340" r="110" fill="#0a766c" opacity="0.35"/>
+  <g stroke="#e6f4f2" stroke-width="2" opacity="0.35" fill="none">
+    <path d="M60 120h180M60 160h120M60 200h150"/>
+    <rect x="330" y="240" width="210" height="120" rx="10"/>
+  </g>
+  <text x="300" y="405" text-anchor="middle" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14"
+        fill="#e6f4f2" opacity="0.6">replace with a photo of you</text>
+</svg>

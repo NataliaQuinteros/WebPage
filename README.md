@@ -1,52 +1,86 @@
 # Portfolio
 
-Personal portfolio site built with plain HTML, CSS and JavaScript. No build step, no
-dependencies, no framework to update. Deployed with GitHub Pages.
+Personal portfolio site. Plain HTML, CSS and JavaScript, no build step.
+Deployed with GitHub Pages.
 
 **Live:** https://NataliaQuinteros.github.io/portfolio/
+
+## Credit
+
+Built on the [Portfolio Responsive Complete](https://github.com/bedimcode/portfolio-responsive-complete)
+template by [Bedimcode](https://www.youtube.com/@Bedimcode). The upstream repo
+ships no licence file, so treat it as a tutorial template used with credit, kept
+in the page footer and in the head of `index.html`. None of the original
+author's photos are included here.
 
 ## Files
 
 ```
-index.html        the whole page (all content lives here)
-404.html          not-found page
-css/styles.css    design tokens at the top, then styles by section
-js/main.js        theme toggle, scroll reveal, active nav link
-assets/           favicon, images
-.nojekyll         tells GitHub Pages to serve files as-is
+index.html            the whole page (all content lives here)
+404.html              not-found page
+assets/css/styles.css template styles, retheming and additions at the bottom
+assets/js/main.js     mobile menu, active nav link, ScrollReveal, footer year
+assets/img/           placeholder artwork, all meant to be replaced
+assets/favicon.svg    browser tab icon
+.nojekyll             tells GitHub Pages to serve files as-is
 ```
 
-## Sections
+## Placeholder images to replace
 
-Hero → Selected work → Experience → About (bio, education, CTFs, skills) →
-Contact. Content is written directly in `index.html`; there's no CMS or data
-file to keep in sync.
+Everything in `assets/img/` is generated placeholder art, not real imagery.
 
-- **Add a project:** copy a whole `<article class="project">` block, paste it
-  after the last one, bump the number. To make the whole row clickable, swap
-  the title's `<span class="project__link">` for
-  `<a class="project__link" href="...">`.
-- **Add a job:** copy a whole `<li class="job">` block inside `<ol class="timeline">`.
-- **Skills:** the `<ul class="chips">` lists in the About section.
+| File | Shows | Replace with |
+| --- | --- | --- |
+| `profile.svg` | silhouette in the home blob | a photo of you, roughly square |
+| `about.svg` | abstract shapes | a photo for the About section |
+| `work1.svg` to `work4.svg` | project name cards | screenshots of each project |
 
-Colours, fonts and spacing are CSS variables at the top of `css/styles.css`.
-Change `--accent` to restyle the whole site in one edit. Dark mode follows the
-visitor's system setting, and the header toggle overrides it.
+Keep the filenames and the images swap in with no code changes. If you switch
+to `.jpg` or `.png`, update the `src` in `index.html` too.
+
+## Editing
+
+- **Projects:** the `work__img` blocks in the Work section. Each has an image,
+  a title, a description and a tag line. To make a card clickable, swap its
+  wrapping `<div class="work__img">` for `<a href="..." class="work__img">`.
+- **Experience:** the `experience__item` blocks.
+- **Skills:** the `skills__data` blocks. The bar width comes from
+  `skills__advanced` (90%) or `skills__intermediate` (65%), and the label text
+  next to it is plain text.
+- **Colour:** `--hue-color` at the top of `assets/css/styles.css` drives the
+  palette. Note that `--first-color` is darkened from the template's original
+  60% lightness to 27%, because white button text on the lighter teal fell
+  below readable contrast. If you change the hue, check contrast again.
+- **Fonts:** Inter for body text, Roboto for numerals and small labels. The
+  template originally used Poppins, restored by changing `--body-font`.
+
+## Contact form
+
+The form posts to Formspree, which needs a free account. Create a form at
+[formspree.io](https://formspree.io) and paste your endpoint into the `action`
+attribute in the Contact section, replacing `YOUR_FORM_ID`. Until then the form
+will not deliver anything, but the email link beside it works.
 
 ## Publishing the CV
 
-The résumé link is commented out in `index.html` (hero section). The source CV
-at `main.pdf` carries a home address and phone number, so it's listed in
-`.gitignore` and never pushed. To publish a CV, save a version with those
-details removed to `assets/resume.pdf` and uncomment the link.
+There is no résumé link on the page. The source CV at `main.pdf` carries a home
+address and phone number, so it is listed in `.gitignore` and never pushed. To
+publish one, save a version with those details removed to `assets/resume.pdf`
+and link it.
+
+## External dependencies
+
+Two CDN files, both needed for the template to look right:
+
+- Boxicons, for every icon on the page
+- ScrollReveal, for the scroll animations
 
 ## Preview locally
 
-Open `index.html` in a browser, or run a local server so paths behave exactly
-as they will in production:
+Open `index.html` in a browser, or run a local server:
 
 ```bash
-npx serve .          # then open the URL it prints
+npx serve .
 # or
 python -m http.server 8000
 ```
@@ -54,5 +88,4 @@ python -m http.server 8000
 ## Deploy
 
 Push to `main`, then in the repo: **Settings → Pages → Build and deployment →
-Deploy from a branch → `main` / `/ (root)`**. First build takes a minute or
-two; later pushes go live within seconds.
+Deploy from a branch → `main` / `/ (root)`**.
