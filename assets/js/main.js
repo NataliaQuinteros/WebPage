@@ -57,7 +57,7 @@ sr.reveal(".home__data, .about__img, .skills__subtitle",{});
 sr.reveal(".home__img, .about__subtitle, .about__text",{delay: 200});
 sr.reveal(".home__social-icon",{ interval: 80});
 sr.reveal(".skills__group, .work__img, .contact__input",{interval: 80});
-sr.reveal(".about__facts li, .experience__item",{interval: 70});
+sr.reveal(".about__facts li, .experience__item, .extras__item",{interval: 70});
 sr.reveal(".contact__info",{delay: 180});
 
 /*===== FOOTER YEAR =====*/
