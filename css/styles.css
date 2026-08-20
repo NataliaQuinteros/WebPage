@@ -228,10 +228,11 @@ svg { fill: none; stroke: currentColor; stroke-width: 1.7; }
 }
 
 .hero__title {
-  font-size: clamp(2.6rem, 8vw, 4.6rem);
+  font-size: clamp(2rem, 7.5vw, 4.4rem);
   font-weight: 700;
   letter-spacing: -0.04em;
   margin-bottom: 0.5rem;
+  overflow-wrap: break-word;
 }
 
 .hero__role {
@@ -346,8 +347,8 @@ svg { fill: none; stroke: currentColor; stroke-width: 1.7; }
 .project__title { font-size: clamp(1.3rem, 3.2vw, 1.6rem); font-weight: 600; margin-bottom: 0.6rem; }
 
 .project__link { display: inline-flex; align-items: center; gap: 0.5rem; }
-/* Make the whole row clickable via the title link */
-.project__link::after { content: ""; position: absolute; inset: 0; }
+/* Make the whole row clickable - only when the title is actually a link */
+a.project__link::after { content: ""; position: absolute; inset: 0; }
 
 .project__link .arrow {
   color: var(--ink-mute);
@@ -382,8 +383,82 @@ svg { fill: none; stroke: currentColor; stroke-width: 1.7; }
 }
 .project__meta a:hover { color: var(--accent); border-bottom-color: var(--accent); }
 
+.project__where { color: var(--ink-mute); font-family: var(--font-mono); font-size: 0.78rem; }
+
 .projects__more { margin-top: 2rem; font-size: 0.9rem; color: var(--ink-mute); }
 .projects__more a { color: var(--accent); font-weight: 500; }
+
+/* ---------- experience timeline ---------- */
+
+.timeline { display: flex; flex-direction: column; counter-reset: none; }
+
+.job {
+  display: grid;
+  grid-template-columns: 10.5rem 1fr;
+  gap: 0.5rem 1.5rem;
+  padding-block: 2rem;
+  border-top: 1px solid var(--line);
+}
+.job:last-child { border-bottom: 1px solid var(--line); }
+
+.job__dates {
+  margin: 0;
+  padding-top: 0.3rem;
+  color: var(--ink-mute);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  white-space: nowrap;
+}
+
+.job__role { font-size: 1.12rem; font-weight: 600; }
+
+.job__org {
+  margin: 0.15rem 0 0.85rem;
+  color: var(--accent);
+  font-size: 0.92rem;
+  font-weight: 500;
+}
+
+.job__points { display: flex; flex-direction: column; gap: 0.5rem; max-width: 46rem; }
+.job__points li {
+  position: relative;
+  padding-left: 1.1rem;
+  color: var(--ink-soft);
+  font-size: 0.94rem;
+}
+.job__points li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.72em;
+  width: 5px;
+  height: 1px;
+  background: var(--ink-mute);
+}
+
+/* ---------- small labelled fact lists (education, CTFs) ---------- */
+
+.block__title {
+  margin: 2.5rem 0 1rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.facts { display: flex; flex-direction: column; }
+.facts li {
+  display: grid;
+  grid-template-columns: 3.5rem 1fr;
+  gap: 1rem;
+  padding-block: 0.7rem;
+  border-top: 1px solid var(--line);
+  font-size: 0.92rem;
+}
+.facts li:last-child { border-bottom: 1px solid var(--line); }
+
+.facts__year { color: var(--ink-mute); font-family: var(--font-mono); font-size: 0.78rem; padding-top: 0.15rem; }
+.facts__body { color: var(--ink-soft); }
+.facts__body strong { color: var(--ink); font-weight: 600; }
+.facts__body em { font-style: normal; color: var(--ink-mute); }
 
 /* ---------- about ---------- */
 
@@ -462,11 +537,22 @@ svg { fill: none; stroke: currentColor; stroke-width: 1.7; }
 
 /* ---------- responsive ---------- */
 
+/* Four nav items plus the full name gets crowded before the mobile break */
+@media (max-width: 860px) {
+  .brand__name { display: none; }
+}
+
 @media (max-width: 720px) {
   .about { grid-template-columns: 1fr; }
-  .brand__name { display: none; }
   .nav { gap: 1.1rem; }
   .project { grid-template-columns: 2.4rem 1fr; padding-block: 1.6rem; }
+  .job { grid-template-columns: 1fr; gap: 0.4rem; padding-block: 1.6rem; }
+  .job__dates { padding-top: 0; }
+}
+
+@media (max-width: 480px) {
+  .nav { font-size: 0.85rem; gap: 0.9rem; }
+  .facts li { grid-template-columns: 3rem 1fr; gap: 0.75rem; }
 }
 
 @media (max-width: 380px) {

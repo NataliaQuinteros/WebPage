@@ -4,19 +4,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- ===== EDIT: your details ===== -->
-<title>Natalia Quinteros &mdash; Software Developer</title>
-<meta name="description" content="Software developer building clean, fast web applications. Selected projects, skills and contact.">
-<meta name="author" content="Natalia Quinteros">
+<title>Natalia Quinteros-Retamal &mdash; Full-Stack Developer</title>
+<meta name="description" content="Full-stack developer and computer engineer. REST APIs in Express and FastAPI, interfaces in React and Vue, plus cybersecurity research and CTFs.">
+<meta name="author" content="Natalia Quinteros-Retamal">
 
-<!-- Social sharing preview. Replace USERNAME once the repo is live. -->
 <meta property="og:type" content="website">
-<meta property="og:title" content="Natalia Quinteros &mdash; Software Developer">
-<meta property="og:description" content="Software developer building clean, fast web applications.">
-<meta property="og:url" content="https://USERNAME.github.io/portfolio/">
-<!-- <meta property="og:image" content="https://USERNAME.github.io/portfolio/assets/og-image.png"> -->
+<meta property="og:title" content="Natalia Quinteros-Retamal &mdash; Full-Stack Developer">
+<meta property="og:description" content="Full-stack developer and computer engineer, with a second life in cybersecurity.">
+<meta property="og:url" content="https://NataliaQuinteros.github.io/portfolio/">
+<!-- <meta property="og:image" content="https://NataliaQuinteros.github.io/portfolio/assets/og-image.png"> -->
 <meta name="twitter:card" content="summary_large_image">
-<!-- ============================== -->
 
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,11 +37,12 @@
   <div class="wrap header__inner">
     <a class="brand" href="#top">
       <span class="brand__mark">NQ</span>
-      <span class="brand__name">Natalia Quinteros</span>
+      <span class="brand__name">Natalia Quinteros-Retamal</span>
     </a>
 
     <nav class="nav" aria-label="Main">
       <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -68,24 +66,29 @@
   <!-- ===== HERO ===== -->
   <section class="hero">
     <div class="wrap">
-      <p class="hero__eyebrow reveal">Santiago, Chile &middot; Available for work</p>
-      <h1 class="hero__title reveal">Natalia Quinteros</h1>
-      <p class="hero__role reveal">Software Developer</p>
+      <p class="hero__eyebrow reveal">Lausanne, Switzerland &middot; Open to new roles</p>
+      <h1 class="hero__title reveal">Natalia<br>Quinteros-Retamal</h1>
+      <p class="hero__role reveal">Full-Stack Developer &amp; Computer Engineer</p>
       <p class="hero__pitch reveal">
-        I build clean, fast web applications &mdash; from the data model up to
-        the last pixel. Currently studying at Universidad de Chile and looking
-        for my next team to build with.
+        I build web applications end to end &mdash; REST APIs in Express and
+        FastAPI, interfaces in React and Vue, and the integrations in between.
+        The other half of my work is cybersecurity: research at CLCERT, a
+        thesis on detecting hidden spy devices, and a habit of placing well in
+        CTFs.
       </p>
 
       <div class="hero__actions reveal">
         <a class="btn btn--primary" href="#work">View my work</a>
-        <a class="btn" href="mailto:natalia.quinteros@ug.uchile.cl">Get in touch</a>
+        <a class="btn" href="mailto:nataliaquinterosr@gmail.com">Get in touch</a>
       </div>
 
       <ul class="hero__links reveal">
-        <li><a href="https://github.com/USERNAME" target="_blank" rel="noopener">GitHub</a></li>
-        <li><a href="https://linkedin.com/in/USERNAME" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://github.com/NataliaQuinteros" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://linkedin.com/in/natalia-quinteros-retamal" target="_blank" rel="noopener">LinkedIn</a></li>
+        <!-- To publish your CV: put the PDF at assets/resume.pdf and uncomment.
+             Strip your home address and phone number from it first.
         <li><a href="assets/resume.pdf" target="_blank" rel="noopener">R&eacute;sum&eacute;</a></li>
+        -->
       </ul>
     </div>
   </section>
@@ -97,30 +100,21 @@
 
       <div class="projects">
 
-        <!-- Copy one <article class="project"> block per project. -->
         <article class="project reveal">
           <span class="project__num" aria-hidden="true">01</span>
           <div class="project__body">
-            <h3 class="project__title">
-              <a class="project__link" href="https://github.com/USERNAME/project-one" target="_blank" rel="noopener">
-                Project One
-                <svg class="arrow" viewBox="0 0 24 24" width="15" height="15" aria-hidden="true">
-                  <path d="M7 17 17 7M9 7h8v8"/>
-                </svg>
-              </a>
-            </h3>
+            <h3 class="project__title"><span class="project__link">Hound</span></h3>
             <p class="project__desc">
-              One or two sentences on what it does and, more importantly, what
-              problem it solves. Mention scale or results if you have them
-              &mdash; &ldquo;cut report generation from four hours to ninety
-              seconds&rdquo; lands harder than a feature list.
+              Thesis project: an application that detects hidden spy devices by
+              sniffing packets from nearby devices in monitor mode, then
+              surfacing what it finds through a web interface. Built end to end,
+              from capture to UI.
             </p>
             <ul class="project__tags">
-              <li>TypeScript</li><li>React</li><li>PostgreSQL</li>
+              <li>FastAPI</li><li>ReactJS</li><li>SQLite</li><li>Kali Linux</li>
             </ul>
             <div class="project__meta">
-              <a href="https://github.com/USERNAME/project-one" target="_blank" rel="noopener">Source</a>
-              <a href="https://example.com" target="_blank" rel="noopener">Live demo</a>
+              <span class="project__where">Hackerlab &middot; 2023&ndash;2024</span>
             </div>
           </div>
         </article>
@@ -128,23 +122,17 @@
         <article class="project reveal">
           <span class="project__num" aria-hidden="true">02</span>
           <div class="project__body">
-            <h3 class="project__title">
-              <a class="project__link" href="https://github.com/USERNAME/project-two" target="_blank" rel="noopener">
-                Project Two
-                <svg class="arrow" viewBox="0 0 24 24" width="15" height="15" aria-hidden="true">
-                  <path d="M7 17 17 7M9 7h8v8"/>
-                </svg>
-              </a>
-            </h3>
+            <h3 class="project__title"><span class="project__link">Semantic search &amp; production scheduling</span></h3>
             <p class="project__desc">
-              What you built, who it was for, and the interesting technical
-              decision you made along the way.
+              An embeddings pipeline on Atlas Vector Search behind a React API,
+              paired with OpenAI language models, plus production schedulers
+              built on Google&rsquo;s CP-SAT constraint solver.
             </p>
             <ul class="project__tags">
-              <li>Python</li><li>FastAPI</li><li>Docker</li>
+              <li>React</li><li>MongoDB Atlas</li><li>OpenAI</li><li>CP-SAT</li>
             </ul>
             <div class="project__meta">
-              <a href="https://github.com/USERNAME/project-two" target="_blank" rel="noopener">Source</a>
+              <span class="project__where">Crazycake Technologies &middot; 2024&ndash;2026</span>
             </div>
           </div>
         </article>
@@ -152,23 +140,36 @@
         <article class="project reveal">
           <span class="project__num" aria-hidden="true">03</span>
           <div class="project__body">
-            <h3 class="project__title">
-              <a class="project__link" href="https://github.com/USERNAME/project-three" target="_blank" rel="noopener">
-                Project Three
-                <svg class="arrow" viewBox="0 0 24 24" width="15" height="15" aria-hidden="true">
-                  <path d="M7 17 17 7M9 7h8v8"/>
-                </svg>
-              </a>
-            </h3>
+            <h3 class="project__title"><span class="project__link">Payments &amp; delivery integrations</span></h3>
             <p class="project__desc">
-              Coursework and side projects count. Pick the ones you could talk
-              about for ten minutes without getting bored.
+              RESTful APIs in Express and Node.js wired up to third-party
+              services including Webpay Transbank and PedidosYa, then surfaced
+              through responsive, user-focused Vue.js front-ends.
             </p>
             <ul class="project__tags">
-              <li>JavaScript</li><li>Node.js</li><li>SQLite</li>
+              <li>Express.js</li><li>Node.js</li><li>Vue.js</li><li>REST</li>
             </ul>
             <div class="project__meta">
-              <a href="https://github.com/USERNAME/project-three" target="_blank" rel="noopener">Source</a>
+              <span class="project__where">Crazycake Technologies &middot; 2024&ndash;2026</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <span class="project__num" aria-hidden="true">04</span>
+          <div class="project__body">
+            <h3 class="project__title"><span class="project__link">Infobonos &mdash; bond spreads &amp; yield curves</span></h3>
+            <p class="project__desc">
+              Two modules for a financial data platform: one showing the spread
+              across a range of bonds at a given moment, one showing the state
+              of yield curves. Extended the platform&rsquo;s GraphQL API to
+              connect them to AWS endpoints.
+            </p>
+            <ul class="project__tags">
+              <li>ReactJS</li><li>FastAPI</li><li>GraphQL</li><li>AWS</li>
+            </ul>
+            <div class="project__meta">
+              <span class="project__where">LVA &Iacute;ndices &middot; 2023</span>
             </div>
           </div>
         </article>
@@ -176,57 +177,194 @@
       </div>
 
       <p class="projects__more reveal">
-        More on <a href="https://github.com/USERNAME" target="_blank" rel="noopener">GitHub &rarr;</a>
+        More on <a href="https://github.com/NataliaQuinteros" target="_blank" rel="noopener">GitHub &rarr;</a>
       </p>
     </div>
   </section>
 
+  <!-- ===== EXPERIENCE ===== -->
+  <section class="section section--alt" id="experience">
+    <div class="wrap">
+      <h2 class="section__title reveal">Experience</h2>
+
+      <ol class="timeline">
+
+        <li class="job reveal">
+          <p class="job__dates">Sep 2024 &ndash; Jun 2026</p>
+          <div class="job__body">
+            <h3 class="job__role">Full-Stack Developer</h3>
+            <p class="job__org">Crazycake Technologies</p>
+            <ul class="job__points">
+              <li>Built RESTful APIs with Express.js and Node.js, and integrated them with third-party services such as Webpay Transbank and PedidosYa.</li>
+              <li>Wired those APIs into Vue.js applications and developed responsive, user-focused front-end interfaces.</li>
+              <li>Developed embeddings with Atlas Vector Search for a React API coupled with OpenAI language models, and production schedulers using Google&rsquo;s CP-SAT solver.</li>
+              <li>Managed client interactions throughout project planning and development.</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="job reveal">
+          <p class="job__dates">Apr 2023 &ndash; Present</p>
+          <div class="job__body">
+            <h3 class="job__role">Cybersecurity Researcher</h3>
+            <p class="job__org">CLCERT &middot; Universidad de Chile</p>
+            <ul class="job__points">
+              <li>Member of the Applied Cryptography and Cybersecurity laboratory, doing voluntary outreach on good practices and online risk.</li>
+              <li>Development of services focused on cybersecurity.</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="job reveal">
+          <p class="job__dates">2021 &ndash; 2024</p>
+          <div class="job__body">
+            <h3 class="job__role">Teaching Assistant</h3>
+            <p class="job__org">Universidad de Chile</p>
+            <ul class="job__points">
+              <li>Competitive Hacking Workshop &mdash; two semesters.</li>
+              <li>Databases, and Design and Analysis of Algorithms.</li>
+              <li>Computational Tools for Engineering and Sciences &mdash; three semesters.</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="job reveal">
+          <p class="job__dates">Jan &ndash; Mar 2023</p>
+          <div class="job__body">
+            <h3 class="job__role">Full-Stack Developer, Internship</h3>
+            <p class="job__org">LVA &Iacute;ndices</p>
+            <ul class="job__points">
+              <li>Built bond spread and yield curve modules for the Infobonos platform using ReactJS and FastAPI, and modified a GraphQL API to connect them to AWS endpoints.</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="job reveal">
+          <p class="job__dates">Jan &ndash; Mar 2022</p>
+          <div class="job__body">
+            <h3 class="job__role">Front-End Developer, Internship</h3>
+            <p class="job__org">Neykos SPA</p>
+            <ul class="job__points">
+              <li>Developed tests and a Ruby on Rails module for the PMSystem web application, displaying measured KPIs for goods-producing companies.</li>
+            </ul>
+          </div>
+        </li>
+
+      </ol>
+    </div>
+  </section>
+
   <!-- ===== ABOUT ===== -->
-  <section class="section section--alt" id="about">
+  <section class="section" id="about">
     <div class="wrap about">
+
       <div class="about__text">
         <h2 class="section__title reveal">About</h2>
         <p class="reveal">
-          Write two short paragraphs here. The first: what you do, the kind of
-          problems you like, and what you are looking for. Keep it concrete
-          &mdash; &ldquo;I like turning messy data into interfaces people
-          actually use&rdquo; beats &ldquo;passionate about technology&rdquo;.
+          I&rsquo;m a computer engineer from Universidad de Chile, and I&rsquo;ve
+          spent the last few years building full-stack web applications end to
+          end &mdash; APIs in Express and FastAPI, interfaces in React and Vue,
+          and the integrations that hold the two together. Most recently at
+          Crazycake Technologies, where I worked with clients directly from
+          project planning through delivery.
         </p>
         <p class="reveal">
-          The second: a little context. Where you study or work, what you are
-          learning right now, and one human detail so you read as a person
-          rather than a keyword list.
+          The other half of my work is security. I research at CLCERT, the
+          University of Chile&rsquo;s applied cryptography and cybersecurity
+          laboratory, and wrote my thesis on detecting hidden spy devices
+          through packet sniffing. I&rsquo;ve taught seven semesters as a
+          teaching assistant &mdash; including a competitive hacking workshop
+          &mdash; and built course material for SheHacks, a Ni&ntilde;as Pro
+          initiative that gets secondary-school girls into programming and
+          cybersecurity. I&rsquo;m based near Lausanne and looking for my next
+          team.
         </p>
+
+        <h3 class="block__title reveal">Education</h3>
+        <ul class="facts reveal">
+          <li>
+            <span class="facts__year">2024</span>
+            <span class="facts__body">
+              <strong>Computer Engineering</strong>
+              &mdash; Universidad de Chile, Facultad de Ciencias F&iacute;sicas y Matem&aacute;ticas.
+              <em>Graduated with highest honors.</em>
+            </span>
+          </li>
+          <li>
+            <span class="facts__year">2022</span>
+            <span class="facts__body">
+              <strong>BSc Computer Science</strong>
+              &mdash; Universidad de Chile, Facultad de Ciencias F&iacute;sicas y Matem&aacute;ticas.
+              <em>Graduated with honors.</em>
+            </span>
+          </li>
+        </ul>
+
+        <h3 class="block__title reveal">Capture the flag</h3>
+        <ul class="facts reveal">
+          <li><span class="facts__year">2022</span><span class="facts__body"><strong>1st place</strong> &mdash; NIVEL4</span></li>
+          <li><span class="facts__year">2023</span><span class="facts__body"><strong>5th place</strong> &mdash; CTF PDI, Campo de Marte</span></li>
+          <li><span class="facts__year">2023</span><span class="facts__body"><strong>7th place</strong> &mdash; Hack.ing</span></li>
+        </ul>
       </div>
 
       <div class="about__side">
         <div class="skills reveal">
           <h3 class="skills__group">Languages</h3>
-          <ul class="chips"><li>JavaScript</li><li>TypeScript</li><li>Python</li><li>SQL</li><li>Java</li></ul>
+          <ul class="chips">
+            <li>Python</li><li>JavaScript</li><li>Java</li><li>SQL</li><li>HTML5</li>
+            <li>CSS</li><li>Shell</li><li>Matlab</li><li>C</li><li>Ruby</li><li>R</li><li>Racket</li>
+          </ul>
 
-          <h3 class="skills__group">Frameworks &amp; tools</h3>
-          <ul class="chips"><li>React</li><li>Node.js</li><li>FastAPI</li><li>PostgreSQL</li><li>Git</li><li>Docker</li></ul>
+          <h3 class="skills__group">Frameworks &amp; libraries</h3>
+          <ul class="chips">
+            <li>React</li><li>Vue</li><li>Express.js</li><li>Node.js</li><li>FastAPI</li>
+            <li>Django</li><li>Ruby on Rails</li><li>Pandas</li><li>NumPy</li><li>PyOpenGL</li>
+          </ul>
 
-          <h3 class="skills__group">Also comfortable with</h3>
-          <ul class="chips"><li>Figma</li><li>Linux</li><li>CI/CD</li><li>Testing</li></ul>
+          <h3 class="skills__group">Data</h3>
+          <ul class="chips">
+            <li>MongoDB</li><li>SQLite</li><li>GraphQL</li><li>Atlas Vector Search</li>
+          </ul>
+
+          <h3 class="skills__group">Cloud &amp; tooling</h3>
+          <ul class="chips">
+            <li>AWS (ECS, Lightsail)</li><li>Azure</li><li>Docker</li><li>Git</li>
+            <li>CI/CD</li><li>Bash / Linux</li><li>WSL2</li><li>Figma</li>
+          </ul>
+
+          <h3 class="skills__group">Security</h3>
+          <ul class="chips">
+            <li>Aircrack-ng</li><li>Burp Suite</li><li>Kali</li><li>Packet sniffing</li>
+          </ul>
+
+          <h3 class="skills__group">Practices</h3>
+          <ul class="chips">
+            <li>Agile / Scrum</li><li>TDD</li><li>SOLID</li><li>OOP</li>
+          </ul>
+
+          <h3 class="skills__group">Spoken</h3>
+          <ul class="chips">
+            <li>Spanish &mdash; native</li><li>English &mdash; C1</li><li>French &mdash; B2</li>
+          </ul>
         </div>
       </div>
+
     </div>
   </section>
 
   <!-- ===== CONTACT ===== -->
-  <section class="section" id="contact">
+  <section class="section section--alt" id="contact">
     <div class="wrap contact">
       <h2 class="section__title reveal">Contact</h2>
       <p class="contact__lead reveal">
-        Open to internships, junior roles and freelance work. The fastest way
-        to reach me is email.
+        I&rsquo;m open to full-stack and security-adjacent roles in Switzerland
+        and remotely. The fastest way to reach me is email.
       </p>
-      <a class="contact__email reveal" href="mailto:natalia.quinteros@ug.uchile.cl">natalia.quinteros@ug.uchile.cl</a>
+      <a class="contact__email reveal" href="mailto:nataliaquinterosr@gmail.com">nataliaquinterosr@gmail.com</a>
       <ul class="contact__links reveal">
-        <li><a href="https://github.com/USERNAME" target="_blank" rel="noopener">GitHub</a></li>
-        <li><a href="https://linkedin.com/in/USERNAME" target="_blank" rel="noopener">LinkedIn</a></li>
-        <li><a href="assets/resume.pdf" target="_blank" rel="noopener">R&eacute;sum&eacute; (PDF)</a></li>
+        <li><a href="https://github.com/NataliaQuinteros" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://linkedin.com/in/natalia-quinteros-retamal" target="_blank" rel="noopener">LinkedIn</a></li>
       </ul>
     </div>
   </section>
@@ -235,7 +373,7 @@
 
 <footer class="site-footer">
   <div class="wrap footer__inner">
-    <p>&copy; <span id="year">2026</span> Natalia Quinteros</p>
+    <p>&copy; <span id="year">2026</span> Natalia Quinteros-Retamal</p>
     <p><a href="#top">Back to top &uarr;</a></p>
   </div>
 </footer>
