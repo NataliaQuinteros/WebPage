@@ -617,14 +617,6 @@ textarea:focus-visible {
   }
 }
 
-@media screen and (max-width: 575px) {
-  .home {
-    grid-template-columns: 100%;
-    row-gap: 5rem;
-    padding-bottom: 6rem;
-  }
-}
-
 /* ----- skills: two columns of cards ----- */
 .skills__groups {
   display: grid;
@@ -825,4 +817,45 @@ body.has-lightbox {
 .nav__link.active-link {
   background-color: var(--first-color-tint);
   color: var(--first-color);
+}
+
+/* ----- about: the cutout on a dark green panel ----- */
+.about__img {
+  justify-self: center;
+  width: 220px;
+  border-radius: 1rem;
+  background-color: var(--second-color);
+  overflow: hidden;
+  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+}
+.about__img img {
+  width: 100%;
+  border-radius: 0;
+}
+
+/* ----- home on phones: stack the blob above the text ----- */
+@media screen and (max-width: 767px) {
+  .home {
+    grid-template-columns: 100%;
+    justify-items: center;
+    row-gap: 1.75rem;
+    padding: 2rem 0 3rem;
+  }
+  .home__img {
+    /* Static, so it takes a row of its own instead of floating over the
+       heading. order pulls it above the text block. */
+    position: static;
+    order: -1;
+    width: min(210px, 52vw);
+  }
+  .home__data {
+    width: 100%;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about__img {
+    width: 300px;
+  }
 }

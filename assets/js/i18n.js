@@ -32,7 +32,7 @@ const I18N = {
     'about.p2': 'Mi otra pasión es la ciberseguridad. Escribí mi tesis en torno a la detección de dispositivos espía ocultos, mediante sniffing de paquetes. Fuí ayudante durante siete semestres, incluyendo un taller de hacking competitivo, y creé material de curso enfocado en ciberseguridad.',
     'about.fact1': 'Ingeniería Civil en Computación, Universidad de Chile - distinción máxima',
     'about.fact2': 'Licenciatura en Ciencias de la Computación, Universidad de Chile - distinción',
-    'about.imgAlt': 'Ilustración provisional, pendiente de reemplazar por una foto',
+    'about.imgAlt': 'Foto de Natalia Quinteros-Retamal',
 
     'skills.title': 'Habilidades',
     'skills.subtitle': 'Habilidades profesionales',
@@ -116,7 +116,7 @@ const I18N = {
     'about.p2': "Ma seconde passion est la cybersécurité. J'ai rédigé mon mémoire sur la détection d'appareils espions cachés par analyse de paquets. J'ai été assistante d'enseignement pendant sept semestres, dont un atelier de hacking compétitif, et j'ai créé du matériel de cours axé sur la cybersécurité.",
     'about.fact1': 'Ingénierie informatique, Universidad de Chile - félicitations du jury',
     'about.fact2': 'Licence en informatique, Universidad de Chile - mention',
-    'about.imgAlt': 'Illustration provisoire, à remplacer par une photo',
+    'about.imgAlt': 'Photo de Natalia Quinteros-Retamal',
 
     'skills.title': 'Compétences',
     'skills.subtitle': 'Compétences professionnelles',
