@@ -143,18 +143,6 @@ img {
   position: relative;
   color: #fff;
 }
-.nav__link:hover {
-  position: relative;
-}
-.nav__link:hover::after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 0.18rem;
-  left: 0;
-  top: 2rem;
-  background-color: var(--first-color);
-}
 .nav__logo {
   color: var(--first-color);
 }
@@ -165,16 +153,6 @@ img {
 }
 
 /*Active menu*/
-.active-link::after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 0.18rem;
-  left: 0;
-  top: 2rem;
-  background-color: var(--first-color);
-}
-
 /*=== Show menu ===*/
 .show {
   right: 0;
@@ -403,7 +381,6 @@ img {
     padding-top: 0;
   }
   .nav__item {
-    margin-left: var(--mb-6);
     margin-bottom: 0;
   }
   .nav__toggle {
@@ -434,9 +411,6 @@ img {
   .work__container {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
-  }
-  .nav__item {
-    margin-left: var(--mb-4);
   }
 }
 @media screen and (min-width: 992px) {
@@ -794,13 +768,13 @@ body.has-lightbox {
 @media screen and (min-width: 768px) {
   /* Seven nav items need tighter spacing before the wide breakpoint. */
   .nav__item {
-    margin-left: 1.5rem;
+    margin-left: 0.75rem;
   }
 }
 
 @media screen and (min-width: 992px) {
   .nav__item {
-    margin-left: var(--mb-4);
+    margin-left: 1.5rem;
   }
 }
 
@@ -837,4 +811,18 @@ body.has-lightbox {
     margin-left: auto;
     margin-right: 1rem;
   }
+}
+
+/* ----- nav links: pale moss on hover and on the current section ----- */
+/* Appended so it outranks the .nav__link colour set at the 768 breakpoint. */
+.nav__link {
+  display: inline-block;
+  padding: 0.35rem 0.4rem;
+  border-radius: 5px;
+  transition: background-color 0.18s, color 0.18s;
+}
+.nav__link:hover,
+.nav__link.active-link {
+  background-color: var(--first-color-tint);
+  color: var(--first-color);
 }
