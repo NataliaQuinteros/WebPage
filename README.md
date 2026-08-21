@@ -19,7 +19,8 @@ author's photos are included here.
 index.html            the whole page (all content lives here)
 404.html              not-found page
 assets/css/styles.css template styles, retheming and additions at the bottom
-assets/js/main.js     mobile menu, active nav link, ScrollReveal, footer year
+assets/js/main.js     mobile menu, active nav link, ScrollReveal, lightbox
+assets/js/i18n.js     Spanish and French translations, language switcher
 assets/img/           placeholder artwork, all meant to be replaced
 assets/favicon.svg    browser tab icon
 .nojekyll             tells GitHub Pages to serve files as-is
@@ -53,6 +54,26 @@ to `.jpg` or `.png`, update the `src` in `index.html` too.
   below readable contrast. If you change the hue, check contrast again.
 - **Fonts:** Inter for body text, Roboto for numerals and small labels. The
   template originally used Poppins, restored by changing `--body-font`.
+
+## Languages
+
+The page ships in English, Spanish and French, switched by the EN / ES / FR
+buttons in the header. The choice is remembered in localStorage, and English is
+the default for a first visit.
+
+English text lives inline in `index.html`, exactly where you would expect to
+edit it. Spanish and French live in `assets/js/i18n.js`, keyed by the
+`data-i18n` attributes on the English elements. Switching back to English
+restores the inline text, so English never needs a dictionary entry.
+
+**When you edit English copy, update the matching key in `i18n.js`,** or that
+sentence will stay in the old wording for es and fr visitors. To add a newly
+translatable element, give it `data-i18n="some.key"` and add `some.key` to
+both dictionaries. Attributes use `data-i18n-placeholder`, `data-i18n-value`,
+`data-i18n-aria` and `data-i18n-alt`.
+
+Proper nouns are deliberately left untranslated: company names, technology
+chips, Universidad de Chile, Niñas Pro, and the CTF event names.
 
 ## Contact form
 

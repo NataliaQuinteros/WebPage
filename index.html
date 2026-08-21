@@ -21,25 +21,34 @@
 
         <!-- Template: Portfolio Responsive Complete by Bedimcode
              https://github.com/bedimcode/portfolio-responsive-complete -->
+
+        <!-- English text lives inline below. Spanish and French live in
+             assets/js/i18n.js, keyed by the data-i18n attributes. -->
     </head>
     <body>
         <!--===== HEADER =====-->
         <header class="l-header">
             <nav class="nav bd-grid">
                 <div>
-                    <a href="#home" class="nav__logo">Portfolio</a>
+                    <a href="#home" class="nav__logo" data-i18n="nav.logo">Portfolio</a>
                 </div>
 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-                        <li class="nav__item"><a href="#extras" class="nav__link">Extracurriculars</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                        <li class="nav__item"><a href="#home" class="nav__link active-link" data-i18n="nav.home">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link" data-i18n="nav.about">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link" data-i18n="nav.skills">Skills</a></li>
+                        <li class="nav__item"><a href="#experience" class="nav__link" data-i18n="nav.experience">Experience</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link" data-i18n="nav.work">Projects</a></li>
+                        <li class="nav__item"><a href="#extras" class="nav__link" data-i18n="nav.extras">Extracurriculars</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link" data-i18n="nav.contact">Contact</a></li>
                     </ul>
+                </div>
+
+                <div class="lang" id="lang" role="group" aria-label="Language">
+                    <button type="button" class="lang__btn is-active" data-lang="en" lang="en">EN</button>
+                    <button type="button" class="lang__btn" data-lang="es" lang="es">ES</button>
+                    <button type="button" class="lang__btn" data-lang="fr" lang="fr">FR</button>
                 </div>
 
                 <div class="nav__toggle" id="nav-toggle">
@@ -52,11 +61,11 @@
             <!--===== HOME =====-->
             <section class="home bd-grid" id="home">
                 <div class="home__data">
-                    <h1 class="home__title"><span class="home__title-color">Natalia Quinteros</span><br> Software Engineer </h1>
+                    <h1 class="home__title"><span class="home__title-color">Natalia Quinteros</span><br> <span data-i18n="hero.role">Software Engineer</span></h1>
 
-                    <p class="home__subtitle">Lausanne, Switzerland &middot; Open to new roles</p>
+                    <p class="home__subtitle" data-i18n="hero.subtitle">Lausanne, Switzerland &middot; Open to new roles</p>
 
-                    <a href="#contact" class="button">Contact</a>
+                    <a href="#contact" class="button" data-i18n="hero.cta">Contact</a>
                     <div class="home__social">
                         <a href="https://linkedin.com/in/natalia-quinteros-retamal" target="_blank" rel="noopener" class="home__social-icon" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
                         <a href="https://github.com/NataliaQuinteros" target="_blank" rel="noopener" class="home__social-icon" aria-label="GitHub"><i class='bx bxl-github' ></i></a>
@@ -64,7 +73,7 @@
                     </div>
                 </div>
 
-                
+
 
                 <div class="home__img">
                     <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -81,21 +90,21 @@
 
             <!--===== ABOUT =====-->
             <section class="about section " id="about">
-                <h2 class="section-title">About</h2>
+                <h2 class="section-title" data-i18n="about.title">About</h2>
 
                 <div class="about__container bd-grid">
                     <div class="about__img">
-                        <img src="assets/img/about.svg" alt="Placeholder illustration, to be replaced with a photo">
+                        <img src="assets/img/about.svg" alt="Placeholder illustration, to be replaced with a photo" data-i18n-alt="about.imgAlt">
                     </div>
 
                     <div>
-                        <h2 class="about__subtitle">I'm Natalia</h2>
-                        <p class="about__text">I'm a computer engineer from Universidad de Chile, graduated with highest honors. I've spent the last few years building full-stack web applications end to end. I am most experienced at doing APIs in Express and FastAPI, interfaces in React and Vue, and the integrations that hold the two together. At Crazycake Technologies, I worked with clients directly from project planning through delivery.</p>
-                        <p class="about__text">My other passion is cybersecurity. I wrote my thesis on detecting hidden spy devices through packet sniffing. I've taught seven semesters as a teaching assistant, including a competitive hacking workshop, and built course material focused on cybersecurity.</p>
+                        <h2 class="about__subtitle" data-i18n="about.hello">Hello</h2>
+                        <p class="about__text" data-i18n="about.p1">I'm a computer engineer from Universidad de Chile, graduated with highest honors. I've spent the last few years building full-stack web applications end to end. I am most experienced at doing APIs in Express and FastAPI, interfaces in React and Vue, and the integrations that hold the two together. At Crazycake Technologies, I worked with clients directly from project planning through delivery.</p>
+                        <p class="about__text" data-i18n="about.p2">My other passion is cybersecurity. I wrote my thesis on detecting hidden spy devices through packet sniffing. I've taught seven semesters as a teaching assistant, including a competitive hacking workshop, and built course material focused on cybersecurity.</p>
 
                         <ul class="about__facts">
-                            <li><span class="about__facts-year">2024</span> Computer Engineering, Universidad de Chile &middot; highest honors</li>
-                            <li><span class="about__facts-year">2022</span> BSc Computer Science, Universidad de Chile &middot; with honors</li>
+                            <li><span class="about__facts-year">2024</span> <span data-i18n="about.fact1">Computer Engineering, Universidad de Chile &middot; highest honors</span></li>
+                            <li><span class="about__facts-year">2022</span> <span data-i18n="about.fact2">BSc Computer Science, Universidad de Chile &middot; with honors</span></li>
 
                         </ul>
                     </div>
@@ -104,46 +113,46 @@
 
             <!--===== SKILLS =====-->
             <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
+                <h2 class="section-title" data-i18n="skills.title">Skills</h2>
 
                 <div class="skills__container bd-grid">
-                    <h2 class="skills__subtitle">Professional Skills</h2>
+                    <h2 class="skills__subtitle" data-i18n="skills.subtitle">Professional Skills</h2>
 
                     <div class="skills__groups">
 
                         <div class="skills__group">
-                            <h3 class="skills__group-title">Languages</h3>
+                            <h3 class="skills__group-title" data-i18n="skills.languages">Languages</h3>
                             <ul class="chips"><li>Python</li><li>JavaScript</li><li>Java</li><li>SQL</li><li>HTML5</li><li>CSS</li><li>Shell</li><li>Matlab</li><li>C</li><li>R</li><li>Ruby</li><li>Racket</li></ul>
                         </div>
 
                         <div class="skills__group">
-                            <h3 class="skills__group-title">Frameworks &amp; libraries</h3>
+                            <h3 class="skills__group-title" data-i18n="skills.frameworks">Frameworks &amp; libraries</h3>
                             <ul class="chips"><li>React</li><li>Vue</li><li>Express.js</li><li>Node.js</li><li>FastAPI</li><li>Django</li><li>Ruby on Rails</li><li>Pandas</li><li>NumPy</li><li>PyOpenGL</li></ul>
                         </div>
 
                         <div class="skills__group">
-                            <h3 class="skills__group-title">Data</h3>
+                            <h3 class="skills__group-title" data-i18n="skills.data">Data</h3>
                             <ul class="chips"><li>MongoDB</li><li>SQLite</li><li>GraphQL</li><li>Atlas Vector Search</li></ul>
                         </div>
 
                         <div class="skills__group">
-                            <h3 class="skills__group-title">Cloud &amp; tooling</h3>
+                            <h3 class="skills__group-title" data-i18n="skills.cloud">Cloud &amp; tooling</h3>
                             <ul class="chips"><li>AWS (ECS, Lightsail)</li><li>Azure</li><li>Docker</li><li>Git</li><li>CI/CD</li><li>Bash / Linux</li><li>WSL2</li><li>Figma</li></ul>
                         </div>
 
                         <div class="skills__group">
-                            <h3 class="skills__group-title">Security</h3>
-                            <ul class="chips"><li>Aircrack-ng</li><li>Burp Suite</li><li>Kali</li><li>Packet sniffing</li></ul>
+                            <h3 class="skills__group-title" data-i18n="skills.security">Security</h3>
+                            <ul class="chips"><li>Aircrack-ng</li><li>Burp Suite</li><li>Kali</li><li data-i18n="chip.sniffing">Packet sniffing</li></ul>
                         </div>
 
                         <div class="skills__group">
-                            <h3 class="skills__group-title">Practices</h3>
+                            <h3 class="skills__group-title" data-i18n="skills.practices">Practices</h3>
                             <ul class="chips"><li>Agile / Scrum</li><li>TDD</li><li>SOLID</li><li>OOP</li></ul>
                         </div>
 
                         <div class="skills__group">
-                            <h3 class="skills__group-title">Spoken languages</h3>
-                            <ul class="chips"><li>Spanish (native)</li><li>English (C1)</li><li>French (B2)</li></ul>
+                            <h3 class="skills__group-title" data-i18n="skills.spoken">Spoken languages</h3>
+                            <ul class="chips"><li data-i18n="chip.spanish">Spanish (native)</li><li data-i18n="chip.english">English (C1)</li><li data-i18n="chip.french">French (B2)</li></ul>
                         </div>
                     </div>
                 </div>
@@ -151,99 +160,89 @@
 
             <!--===== EXPERIENCE =====-->
             <section class="experience section" id="experience">
-                <h2 class="section-title">Experience</h2>
+                <h2 class="section-title" data-i18n="exp.title">Experience</h2>
 
                 <div class="experience__container bd-grid">
                     <div class="experience__item">
-                        <span class="experience__date">Sep 2024 &ndash; Jun 2026</span>
-                        <h3 class="experience__role">Full-Stack Developer</h3>
+                        <span class="experience__date" data-i18n="exp.date1">Sep 2024 &dash; Jun 2026</span>
+                        <h3 class="experience__role" data-i18n="exp.role1">Full-Stack Developer</h3>
                         <span class="experience__org">Crazycake Technologies</span>
-                        <p class="experience__text">Built RESTful APIs with Express.js and Node.js and integrated them with third-party services including Webpay Transbank and PedidosYa, then wired them into responsive Vue.js interfaces. Developed embeddings with Atlas Vector Search for a React API coupled with OpenAI language models, and production schedulers using Google's CP-SAT solver. Managed client interactions through planning and development.</p>
+                        <p class="experience__text" data-i18n="exp.text1">Built RESTful APIs with Express.js and Node.js and integrated them with third-party services including Webpay Transbank and PedidosYa, then wired them into responsive Vue.js interfaces. Developed embeddings with Atlas Vector Search for a React API coupled with OpenAI language models, and production schedulers using Google's CP-SAT solver. Managed client interactions through planning and development.</p>
                     </div>
 
 
                     <div class="experience__item">
-                        <span class="experience__date">2021 &ndash; 2024</span>
-                        <h3 class="experience__role">Teaching Assistant</h3>
+                        <span class="experience__date" data-i18n="exp.date2">2021 &dash; 2024</span>
+                        <h3 class="experience__role" data-i18n="exp.role2">Teaching Assistant</h3>
                         <span class="experience__org">Universidad de Chile</span>
-                        <p class="experience__text">Competitive Hacking Workshop (two semesters), Databases, Design and Analysis of Algorithms, and Computational Tools for Engineering and Sciences (three semesters).</p>
+                        <p class="experience__text" data-i18n="exp.text2">Competitive Hacking Workshop (two semesters), Databases, Design and Analysis of Algorithms, and Computational Tools for Engineering and Sciences (three semesters).</p>
                     </div>
 
                     <div class="experience__item">
-                        <span class="experience__date">Jan &ndash; Mar 2023</span>
-                        <h3 class="experience__role">Full-Stack Developer, Internship</h3>
+                        <span class="experience__date" data-i18n="exp.date3">Jan 2023 &dash; Mar 2023</span>
+                        <h3 class="experience__role" data-i18n="exp.role3">Full-Stack Developer, Internship</h3>
                         <span class="experience__org">LVA &Iacute;ndices</span>
-                        <p class="experience__text">Built bond spread and yield curve modules for the Infobonos platform using ReactJS and FastAPI, and modified a GraphQL API to connect them to AWS endpoints.</p>
+                        <p class="experience__text" data-i18n="exp.text3">Built bond spread and yield curve modules for the Infobonos platform using ReactJS and FastAPI, and modified a GraphQL API to connect them to AWS endpoints.</p>
                     </div>
 
                     <div class="experience__item">
-                        <span class="experience__date">Jan &ndash; Mar 2022</span>
-                        <h3 class="experience__role">Front-End Developer, Internship</h3>
+                        <span class="experience__date" data-i18n="exp.date4">Jan 2022 &dash; Mar 2022</span>
+                        <h3 class="experience__role" data-i18n="exp.role4">Front-End Developer, Internship</h3>
                         <span class="experience__org">Neykos SPA</span>
-                        <p class="experience__text">Developed tests and a Ruby on Rails module for the PMSystem web application, displaying measured KPIs for goods-producing companies.</p>
+                        <p class="experience__text" data-i18n="exp.text4">Developed tests and a Ruby on Rails module for the PMSystem web application, displaying measured KPIs for goods-producing companies.</p>
                     </div>
                 </div>
             </section>
 
             <!--===== WORK =====-->
             <section class="work section" id="work">
-                <h2 class="section-title">Work</h2>
+                <h2 class="section-title" data-i18n="work.title">Projects</h2>
 
                 <div class="work__container bd-grid">
                     <!-- Clicking the image opens it in the lightbox. Add a
                          work__link before the tags to point at a repo. -->
                     <div class="work__img">
-                        <button type="button" class="work__zoom" aria-label="Open a larger image of Hound">
+                        <button type="button" class="work__zoom" aria-label="Open a larger image of Hound" data-i18n-aria="work.zoomHound">
                             <img src="assets/img/work1.png" alt="Hound">
                         </button>
                         <div class="work__caption">
                             <h3 class="work__title">Hound</h3>
-                            <p class="work__text">Thesis project for Hackerlab. Detects hidden spy devices by sniffing packets from nearby devices in monitor mode, then surfaces what it finds through a web interface.</p>
-                            <a class="work__link" href="https://github.com/NataliaQuinteros/Hound-Windows-Build" target="_blank" rel="noopener"><i class='bx bxl-github'></i> View on GitHub</a>
+                            <p class="work__text" data-i18n="work.houndText">Thesis project for Hackerlab. Detects hidden spy devices by sniffing packets from nearby devices in monitor mode, then surfaces what it finds through a web interface.</p>
+                            <a class="work__link" href="https://github.com/NataliaQuinteros/Hound-Windows-Build" target="_blank" rel="noopener"><i class='bx bxl-github'></i> <span data-i18n="work.github">View on GitHub</span></a>
                             <span class="work__tags">FastAPI &middot; ReactJS &middot; SQLite &middot; Kali</span>
                         </div>
                     </div>
 
-                    <div class="work__img">
-                        <button type="button" class="work__zoom" aria-label="Open a larger image of Semantic search and scheduling">
-                            <img src="assets/img/work2.svg" alt="Semantic search and production scheduling">
-                        </button>
-                        <div class="work__caption">
-                            <h3 class="work__title">Semantic search &amp; scheduling</h3>
-                            <p class="work__text">An embeddings pipeline on Atlas Vector Search behind a React API, paired with OpenAI language models, plus production schedulers built on Google's CP-SAT constraint solver.</p>
-                            <span class="work__tags">React &middot; MongoDB Atlas &middot; OpenAI &middot; CP-SAT</span>
-                        </div>
-                    </div>
                 </div>
             </section>
 
             <!--===== EXTRACURRICULARS =====-->
             <section class="extras section" id="extras">
-                <h2 class="section-title">Extracurriculars</h2>
+                <h2 class="section-title" data-i18n="extras.title">Extracurriculars</h2>
 
                 <div class="extras__container bd-grid">
                     <div class="extras__item">
-                        <span class="extras__date">Apr 2023 &ndash; Present</span>
-                        <h3 class="extras__role">Cybersecurity Researcher</h3>
+                        <span class="extras__date" data-i18n="extras.date1">Apr 2023 &dash; Dec 2024</span>
+                        <h3 class="extras__role" data-i18n="extras.role1">Cybersecurity Researcher</h3>
                         <span class="extras__org">CLCERT &middot; Universidad de Chile</span>
-                        <p class="extras__text">Member of the Applied Cryptography and Cybersecurity laboratory. Voluntary outreach on good practices and online risk, plus development of services focused on cybersecurity.</p>
+                        <p class="extras__text" data-i18n="extras.text1">Member of the Applied Cryptography and Cybersecurity laboratory. Voluntary outreach on good practices and online risk, plus development of services focused on cybersecurity.</p>
                     </div>
 
                     <div class="extras__item">
-                        <span class="extras__date">Jun &ndash; Dec 2024</span>
-                        <h3 class="extras__role">Content creation for SheHacks</h3>
+                        <span class="extras__date" data-i18n="extras.date2">Jun 2024 &dash; Dec 2024</span>
+                        <h3 class="extras__role" data-i18n="extras.role2">Content creation for SheHacks</h3>
                         <span class="extras__org">Ni&ntilde;as Pro</span>
-                        <p class="extras__text">Built classes, exercises and activities for SheHacks, an initiative by the Chilean nonprofit Ni&ntilde;as Pro that encourages secondary school girls into programming, and into cybersecurity in particular.</p>
+                        <p class="extras__text" data-i18n="extras.text2">Built classes, exercises and activities for SheHacks, an initiative by the Chilean nonprofit Ni&ntilde;as Pro that encourages secondary school girls into programming, and into cybersecurity in particular.</p>
                     </div>
 
                     <div class="extras__item">
-                        <span class="extras__date">2022 &ndash; 2023</span>
+                        <span class="extras__date">2022 &dash; 2023</span>
                         <h3 class="extras__role">Capture the flag</h3>
-                        <span class="extras__org">Competitive hacking</span>
+                        <span class="extras__org" data-i18n="extras.org3">Competitive hacking</span>
                         <ul class="extras__list">
-                            <li><span class="extras__list-year">2022</span> 1st place at NIVEL4</li>
-                            <li><span class="extras__list-year">2023</span> 5th place at CTF PDI, Campo de Marte</li>
-                            <li><span class="extras__list-year">2023</span> 7th place at Hack.ing</li>
+                            <li><span class="extras__list-year">2022</span> <span data-i18n="extras.ctf1">1st place at NIVEL4</span></li>
+                            <li><span class="extras__list-year">2023</span> <span data-i18n="extras.ctf2">5th place at CTF PDI, Campo de Marte</span></li>
+                            <li><span class="extras__list-year">2023</span> <span data-i18n="extras.ctf3">7th place at Hack.ing</span></li>
                         </ul>
                     </div>
                 </div>
@@ -251,22 +250,22 @@
 
             <!--===== CONTACT =====-->
             <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
+                <h2 class="section-title" data-i18n="contact.title">Contact</h2>
 
                 <div class="contact__container bd-grid">
                     <!-- This form needs a backend to actually send mail. Create a free
                          form at https://formspree.io, then paste your endpoint into
                          the action below. Until then the email link underneath works. -->
                     <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact__form">
-                        <input type="text" name="name" placeholder="Name" class="contact__input" required>
-                        <input type="email" name="email" placeholder="Email" class="contact__input" required>
-                        <textarea name="message" cols="0" rows="10" placeholder="Message" class="contact__input" required></textarea>
-                        <input type="submit" value="Send" class="contact__button button">
+                        <input type="text" name="name" placeholder="Name" class="contact__input" data-i18n-placeholder="contact.name" required>
+                        <input type="email" name="email" placeholder="Email" class="contact__input" data-i18n-placeholder="contact.email" required>
+                        <textarea name="message" cols="0" rows="10" placeholder="Message" class="contact__input" data-i18n-placeholder="contact.message" required></textarea>
+                        <input type="submit" value="Send" class="contact__button button" data-i18n-value="contact.send">
                     </form>
 
                     <div class="contact__info">
-                        <h3 class="contact__subtitle">Or reach me directly</h3>
-                        <p class="contact__text">I'm open to full-stack and security roles in Switzerland and remotely.</p>
+                        <h3 class="contact__subtitle" data-i18n="contact.subtitle">Or reach me directly</h3>
+                        <p class="contact__text" data-i18n="contact.text">I'm open to full-stack and security roles in Switzerland and remotely.</p>
                         <a href="mailto:nataliaquinterosr@gmail.com" class="contact__link"><i class='bx bx-envelope'></i> nataliaquinterosr@gmail.com</a>
                         <a href="https://github.com/NataliaQuinteros" target="_blank" rel="noopener" class="contact__link"><i class='bx bxl-github'></i> github.com/NataliaQuinteros</a>
                         <a href="https://linkedin.com/in/natalia-quinteros-retamal" target="_blank" rel="noopener" class="contact__link"><i class='bx bxl-linkedin'></i> natalia-quinteros-retamal</a>
@@ -283,17 +282,20 @@
                 <a href="https://linkedin.com/in/natalia-quinteros-retamal" target="_blank" rel="noopener" class="footer__icon" aria-label="LinkedIn"><i class='bx bxl-linkedin' ></i></a>
                 <a href="mailto:nataliaquinterosr@gmail.com" class="footer__icon" aria-label="Email"><i class='bx bx-envelope' ></i></a>
             </div>
-            <p class="footer__copy">&#169; <span id="year">2026</span> Natalia Quinteros-Retamal. Template by <a href="https://github.com/bedimcode/portfolio-responsive-complete" target="_blank" rel="noopener">Bedimcode</a>.</p>
+            <p class="footer__copy">&#169; <span id="year">2026</span> Natalia Quinteros-Retamal. <span data-i18n="footer.template">Template by</span> <a href="https://github.com/bedimcode/portfolio-responsive-complete" target="_blank" rel="noopener">Bedimcode</a>.</p>
         </footer>
 
         <!--===== LIGHTBOX =====-->
-        <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Project image">
-            <button type="button" class="lightbox__close" id="lightbox-close" aria-label="Close image"><i class='bx bx-x'></i></button>
+        <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Project image" data-i18n-aria="lightbox.label">
+            <button type="button" class="lightbox__close" id="lightbox-close" aria-label="Close image" data-i18n-aria="lightbox.close"><i class='bx bx-x'></i></button>
             <img class="lightbox__img" id="lightbox-img" src="" alt="">
         </div>
 
         <!--===== SCROLL REVEAL =====-->
         <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== TRANSLATIONS =====-->
+        <script src="assets/js/i18n.js"></script>
 
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
