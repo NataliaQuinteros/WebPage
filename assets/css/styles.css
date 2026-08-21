@@ -11,8 +11,8 @@
   --first-color: hsl(var(--hue-color), 38%, 28%);
   --first-color-tint: hsl(var(--hue-color), 34%, 93%);
   --second-color: hsl(var(--hue-color), 30%, 10%);
-  /* Panel behind the About cutout. Raise the last number to lighten. */
-  --panel-color: hsl(var(--hue-color), 30%, 18%);
+  /* Darker green, used for the home blob. Raise the last number to lighten. */
+  --deep-color: hsl(var(--hue-color), 30%, 18%);
   /*===== Fuente y tipografia =====*/
   --body-font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   --accent-font: "Roboto", "Segoe UI", Helvetica, Arial, sans-serif;
@@ -203,7 +203,7 @@ img {
   width: 260px;
 }
 .home__blob {
-  fill: var(--first-color);
+  fill: var(--deep-color);
 }
 .home__blob-img {
   width: 400px;
@@ -826,7 +826,7 @@ body.has-lightbox {
   justify-self: center;
   width: 220px;
   border-radius: 1rem;
-  background-color: var(--panel-color);
+  background-color: var(--first-color);
   overflow: hidden;
   box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
 }
