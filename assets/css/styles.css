@@ -851,8 +851,10 @@ body.has-lightbox {
     width: min(210px, 52vw);
   }
   .home__data {
+    /* Left aligned on desktop, centred once the blob sits above it. */
     width: 100%;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
   }
 }
 
