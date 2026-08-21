@@ -107,12 +107,12 @@ const I18N = {
     'nav.contact': 'Contact',
 
     'hero.role': 'Ingénieure logiciel',
-    'hero.subtitle': 'Lausanne, Suisse - Ouverte à de nouvelles opportunités',
+    'hero.subtitle': 'Lausanne, Suisse - Ouverte à des nouvelles opportunités',
     'hero.cta': 'Contact',
 
     'about.title': 'À propos',
     'about.hello': 'Bonjour',
-    'about.p1': "Je suis ingénieure en informatique diplômée de l'Universidad de Chile, avec les félicitations du jury. J'ai passé ces dernières années à construire des applications web full-stack. Mon expérience porte surtout sur les API en Express et FastAPI, les interfaces en React et Vue, et les intégrations qui relient les deux. Chez Crazycake Technologies, j'ai travaillé directement avec les clients, de la planification du projet jusqu'à la livraison.",
+    'about.p1': "Je suis ingénieure en informatique diplômée de l'Universidad de Chile, avec les félicitations du jury. J'ai passé ces dernières années à construire des applications web full-stack. Mon expérience porte surtout sur les API avec Express et FastAPI, les interfaces en React et Vue, et les intégrations qui relient les deux. Chez Crazycake Technologies, j'ai travaillé directement avec les clients, de la planification du projet jusqu'à la livraison.",
     'about.p2': "Ma seconde passion est la cybersécurité. J'ai rédigé mon mémoire sur la détection d'appareils espions cachés par analyse de paquets. J'ai été assistante d'enseignement pendant sept semestres, dont un atelier de hacking compétitif, et j'ai créé du matériel de cours axé sur la cybersécurité.",
     'about.fact1': 'Ingénierie informatique, Universidad de Chile - félicitations du jury',
     'about.fact2': 'Licence en informatique, Universidad de Chile - mention',

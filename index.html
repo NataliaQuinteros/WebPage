@@ -257,7 +257,7 @@
                     <!-- This form needs a backend to actually send mail. Create a free
                          form at https://formspree.io, then paste your endpoint into
                          the action below. Until then the email link underneath works. -->
-                    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact__form">
+                    <form action=${process.env.FORM_ID} method="POST" class="contact__form">
                         <input type="text" name="name" placeholder="Name" class="contact__input" data-i18n-placeholder="contact.name" required>
                         <input type="email" name="email" placeholder="Email" class="contact__input" data-i18n-placeholder="contact.email" required>
                         <textarea name="message" cols="0" rows="10" placeholder="Message" class="contact__input" data-i18n-placeholder="contact.message" required></textarea>
