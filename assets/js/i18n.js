@@ -27,7 +27,7 @@ const I18N = {
     'hero.cta': 'Contacto',
 
     'about.title': 'Sobre mí',
-    'about.hello': 'Hola',
+    'about.hello': 'Quien soy',
     'about.p1': 'Soy ingeniera civil en computación de la Universidad de Chile, titulada con distinción máxima. Últimamente me he dedicado a construir aplicaciones web full-stack. Mis experiencia se concentra en el manejo de APIs con Express y FastAPI, interfaces en React y Vue, y las integraciones que unen ambas partes. En Crazycake Technologies trabajé directamente con clientes, desde la planificación del proyecto hasta la entrega.',
     'about.p2': 'Mi otra pasión es la ciberseguridad. Escribí mi tesis en torno a la detección de dispositivos espía ocultos, mediante sniffing de paquetes. Fuí ayudante durante siete semestres, incluyendo un taller de hacking competitivo, y creé material de curso enfocado en ciberseguridad.',
     'about.fact1': 'Ingeniería Civil en Computación, Universidad de Chile - distinción máxima',
@@ -111,7 +111,7 @@ const I18N = {
     'hero.cta': 'Contact',
 
     'about.title': 'À propos',
-    'about.hello': 'Bonjour',
+    'about.hello': 'Qui je suis',
     'about.p1': "Je suis ingénieure en informatique diplômée de l'Universidad de Chile, avec les félicitations du jury. J'ai passé ces dernières années à construire des applications web full-stack. Mon expérience porte surtout sur les API avec Express et FastAPI, les interfaces en React et Vue, et les intégrations qui relient les deux. Chez Crazycake Technologies, j'ai travaillé directement avec les clients, de la planification du projet jusqu'à la livraison.",
     'about.p2': "Ma seconde passion est la cybersécurité. J'ai rédigé mon mémoire sur la détection d'appareils espions cachés par analyse de paquets. J'ai été assistante d'enseignement pendant sept semestres, dont un atelier de hacking compétitif, et j'ai créé du matériel de cours axé sur la cybersécurité.",
     'about.fact1': 'Ingénierie informatique, Universidad de Chile - félicitations du jury',

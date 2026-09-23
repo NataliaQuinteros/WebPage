@@ -16,7 +16,7 @@
   /*===== Fuente y tipografia =====*/
   --body-font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   --accent-font: "Roboto", "Segoe UI", Helvetica, Arial, sans-serif;
-  --big-font-size: 2rem;
+  --big-font-size: 2.5rem;
   --h2-font-size: 1.25rem;
   --normal-font-size: .938rem;
   --smaller-font-size: .75rem;
@@ -31,7 +31,7 @@
 }
 @media screen and (min-width: 968px) {
   :root {
-    --big-font-size: 3.5rem;
+    --big-font-size: 4.25rem;
     --h2-font-size: 2rem;
     --normal-font-size: 1rem;
     --smaller-font-size: .875rem;
@@ -102,10 +102,10 @@ img {
 
 /*===== LAYOUT =====*/
 .bd-grid {
-  max-width: 1024px;
+  max-width: 1180px;
   display: grid;
-  margin-left: var(--mb-2);
-  margin-right: var(--mb-2);
+  margin-left: calc(var(--mb-2));
+  margin-right: calc(var(--mb-2));
 }
 
 .l-header {
@@ -126,7 +126,7 @@ img {
   align-items: center;
   font-weight: var(--font-semi);
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1180px) {
   .nav__menu {
     position: fixed;
     top: var(--header-height);
@@ -442,7 +442,7 @@ img {
 /* ----- home ----- */
 .home__subtitle {
   font-family: var(--accent-font);
-  font-size: var(--smaller-font-size);
+  font-size: var(--normal-font-size);
   color: var(--first-color);
   font-weight: 500;
   margin-bottom: var(--mb-4);
@@ -799,7 +799,7 @@ body.has-lightbox {
   background-color: var(--first-color-tint);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1180px) {
   /* The menu is off canvas here, so the switcher sits beside the toggle. */
   .lang {
     margin-left: auto;
@@ -833,6 +833,32 @@ body.has-lightbox {
 .about__img img {
   width: 100%;
   border-radius: 0;
+}
+
+/* ----- home fills the first screen ----- */
+/* Phones: body already has a header-height top margin, so subtract it.
+   svh keeps mobile browser toolbars from pushing the next section in. */
+.home {
+  min-height: calc(100vh - var(--header-height));
+  min-height: calc(100svh - var(--header-height));
+  align-content: center;
+}
+@media screen and (min-width: 768px) {
+  .home {
+    /* body margin is 0 here, the fixed header overlaps the top padding */
+    min-height: 100vh;
+    min-height: 100svh;
+    padding: calc(var(--header-height) + 1.5rem) 0 2rem;
+  }
+  .home__img {
+    /* Vertically centred on the text block rather than pinned near the
+       bottom, which left it low once home became full height. Nudged a
+       little above true centre. */
+    top: calc(50% - 1.5rem);
+    bottom: auto;
+    /* translate, not transform: ScrollReveal writes an inline transform. */
+    translate: 0 -50%;
+  }
 }
 
 /* ----- home on phones: stack the blob above the text ----- */
